@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/project423/community-center/issues"
   },
-  "homepage": "https://github.com/project423/community-center#readme"
+  "homepage": "https://github.com/project423/community-center#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
 }
