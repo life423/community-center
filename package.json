@@ -1,0 +1,33 @@
+{
+  "name": "flour-bluff-community-center",
+  "version": "1.0.0",
+  "description": "A place for anyone to come learn.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project423/community-center.git"
+  },
+  "keywords": [
+    "Learn",
+    "Fun",
+    "Community",
+    "Adult",
+    "Learning",
+    "GED",
+    "English",
+    "Math",
+    "Science",
+    "Social",
+    "Studies",
+    "Reading"
+  ],
+  "author": "Andrew Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/project423/community-center/issues"
+  },
+  "homepage": "https://github.com/project423/community-center#readme"
+}
