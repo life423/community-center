@@ -4,7 +4,9 @@
   "description": "A place for anyone to come learn.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "css:postcss": "postcss ./css/style.css --use autoprefixer --no-map -o ./css/style.css -w",
+    "dev": "concurrently \"npm run watch:sass\" \"npm run css:postcss\" "
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,9 @@
   },
   "homepage": "https://github.com/project423/community-center#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.5.0",
+    "postcss-cli": "^10.0.0",
     "sass": "^1.56.1"
   }
 }
