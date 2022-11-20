@@ -1,3 +1,7 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
@@ -82,8 +86,29 @@ body {
 }
 
 .header {
-  font-size: 1.8rem;
-  list-style: none;
   text-transform: uppercase;
-  font-weight: 600;
+  background-color: #D5E3F5;
+  color: #215BA6;
+}
+
+.navigation {
+  font-size: 1.8rem;
+}
+.navigation__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navigation__list__item {
+  margin: 0 1rem;
+}
+.navigation__list__item a {
+  color: #777;
+  text-decoration: none;
+}
+.navigation__list__item a:hover {
+  color: #215BA6;
 }

@@ -8,9 +8,42 @@ $bp-smallest: 31.25em; // 500px
 
 
 //colors
-$color-primary: #3237F0;
-$color-primary-light: #7073f5;
+$color-primary: #215BA6;
+$color-primary-light: #D5E3F5;
 $color-primary-dark: #2327a8;
+
+/* Color Theme Swatches in Hex */
+$My-Color-Theme-1-hex: #3084F2;
+$My-Color-Theme-2-hex: #5A81B5;
+$My-Color-Theme-3-hex: #215BA6;
+$My-Color-Theme-4-hex: #D5E3F5;
+$My-Color-Theme-5-hex: #173F73;
+
+/* Color Theme Swatches in RGBA */
+$My-Color-Theme-1-rgba: rgba(48,132,242, 1);
+$My-Color-Theme-2-rgba: rgba(90,129,181, 1);
+$My-Color-Theme-3-rgba: rgba(33,91,166, 1);
+$My-Color-Theme-4-rgba: rgba(213,227,245, 1);
+$My-Color-Theme-5-rgba: rgba(23,63,115, 1);
+
+/* Color Theme Swatches in Hex */
+$Learning-Center-1-hex: #F28B49;
+$Learning-Center-2-hex: #A65A29;
+$Learning-Center-3-hex: #215BA6;
+$Learning-Center-4-hex: #F2D218;
+$Learning-Center-5-hex: #A69119;
+
+/* Color Theme Swatches in RGBA */
+$Learning-Center-1-rgba: rgba(242,139,73, 1);
+$Learning-Center-2-rgba: rgba(166,90,41, 1);
+$Learning-Center-3-rgba: rgba(33,91,166, 1);
+$Learning-Center-4-rgba: rgba(242,210,24, 1);
+$Learning-Center-5-rgba: rgba(166,145,25, 1);
+
+
+
+
+
 
 $color-secondary-light: #F0B946;
 $color-secondary-dark: #c09438;
@@ -32,6 +65,8 @@ $color-black: #000;
 
 //FONT
 $default-font-size: 1.6rem;
+$default-font-family: 'Lato', sans-serif;
+$default-font-weight: 400;
 
 // Font sizes px
 // 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98

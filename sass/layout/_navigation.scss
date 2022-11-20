@@ -1,6 +1,21 @@
-.header{
+.navigation{
     font-size: 1.8rem;
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: 600;
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        &__item{
+            margin: 0 1rem;
+            a{
+                color: $color-grey-dark;
+                text-decoration: none;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
 }
