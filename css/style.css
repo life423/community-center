@@ -76,6 +76,12 @@ body {
   box-sizing: border-box;
 }
 
+.hero__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -110,10 +116,16 @@ body {
   margin-top: 10rem !important;
 }
 
-.hero__content {
+.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  background-color: orangered;
+}
+.hero__left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: blue;
 }
 
 .header {

@@ -1,5 +1,12 @@
-.hero__content{
+.hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    background-color: orangered;
+
+    &__left{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-color: blue;
+    }
 }
