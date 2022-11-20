@@ -1,21 +1,61 @@
-.navigation{
-    font-size: 1.8rem;
-    &__list{
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        &__item{
-            margin: 0 1rem;
-            a{
-                color: $color-grey-dark;
-                text-decoration: none;
-                &:hover{
-                    color: $color-primary;
-                }
-            }
-        }
+.nav {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 1.6rem;
+  position: relative;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0 1.6rem;
+
+    background-color: $color-primary-light;
+    height: 100%;
+    align-items: center;
+    transition: all 0.5s;
+    
+  }
+
+  &__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: green;
+    transform: scale(0);
+  }
+
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scale(1);
+    height: 100%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey-3;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-grey-4;
     }
+  }
 }

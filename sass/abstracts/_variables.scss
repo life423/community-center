@@ -6,59 +6,37 @@ $bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
+/* Color Theme Swatches in Hex */
+$Learning-Center-1: #F28B49;
+$Learning-Center-2: #A65A29;
+$Learning-Center-3: #215BA6;
+$Learning-Center-4: #F2D218;
+$Learning-Center-5: #A69119;
+
 
 //colors
 $color-primary: #215BA6;
 $color-primary-light: #D5E3F5;
 $color-primary-dark: #2327a8;
 
-/* Color Theme Swatches in Hex */
-$My-Color-Theme-1-hex: #3084F2;
-$My-Color-Theme-2-hex: #5A81B5;
-$My-Color-Theme-3-hex: #215BA6;
-$My-Color-Theme-4-hex: #D5E3F5;
-$My-Color-Theme-5-hex: #173F73;
+$color-primary-1: #3084F2;
+$color-primary-2: #5A81B5;
+$color-primary-3: #215BA6;
+$color-primary-4: #D5E3F5;
+$color-primary-5: #173F73;
 
-/* Color Theme Swatches in RGBA */
-$My-Color-Theme-1-rgba: rgba(48,132,242, 1);
-$My-Color-Theme-2-rgba: rgba(90,129,181, 1);
-$My-Color-Theme-3-rgba: rgba(33,91,166, 1);
-$My-Color-Theme-4-rgba: rgba(213,227,245, 1);
-$My-Color-Theme-5-rgba: rgba(23,63,115, 1);
-
-/* Color Theme Swatches in Hex */
-$Learning-Center-1-hex: #F28B49;
-$Learning-Center-2-hex: #A65A29;
-$Learning-Center-3-hex: #215BA6;
-$Learning-Center-4-hex: #F2D218;
-$Learning-Center-5-hex: #A69119;
-
-/* Color Theme Swatches in RGBA */
-$Learning-Center-1-rgba: rgba(242,139,73, 1);
-$Learning-Center-2-rgba: rgba(166,90,41, 1);
-$Learning-Center-3-rgba: rgba(33,91,166, 1);
-$Learning-Center-4-rgba: rgba(242,210,24, 1);
-$Learning-Center-5-rgba: rgba(166,145,25, 1);
-
-
-
-
-
-
+$color-secondary: #F2D218;
 $color-secondary-light: #F0B946;
 $color-secondary-dark: #c09438;
 
-$color-tertiary-light: #F02E58;
-$color-tertiary-dark: #c02546;
+
+$color-grey-1: #EBEBEB;
+$color-grey-2: #ABABAB;
+$color-grey-3: #5E5E5E;
+$color-grey-4: #6B6B6B;
+$color-grey-5: #454545;
 
 
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
 
 $color-white: #fff;
 $color-black: #000;
