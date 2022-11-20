@@ -1,26 +1,31 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    //defines what 1 rem = 10px 10px/16px = 62.5%
-    font-size: 62.5%; 
-    
+  //defines what 1 rem = 10px 10px/16px = 62.5%
+  font-size: 62.5%;
 }
 
 body {
-    font-family: $default-font-family;
-    box-sizing: border-box;
-    font-weight: 400;    
+  font-family: $default-font-family;
+  box-sizing: border-box;
+  font-weight: 400;
+  background-color: $color-background;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 2rem;
+  // @include center;
+  max-width: 140rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
 }
-
-

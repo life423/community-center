@@ -1,5 +1,5 @@
 .hero {
-  max-width: 114rem;
+  
   height: 75vh;
 
   &__heading{
@@ -14,6 +14,7 @@
     justify-content: center;
     gap: 2.4rem;
     background-color: $color-grey-1;
+    
   }
 
   &__left {
@@ -24,6 +25,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &--content{
+        width: 32rem;
+    }
+
   }
 
   &__right {
@@ -39,7 +45,7 @@
     justify-content: flex-end;
     align-items: center;
     
-    flex: 0 1 87%;
+    flex: 0 0 87%;
   }
 
   &__img {
