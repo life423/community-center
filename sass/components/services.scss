@@ -9,8 +9,13 @@
   justify-content: space-between;
   gap: 2.4rem;
 
-  &__heading{
-        color: $color-primary;
+  &__heading {
+    display: inline-block;
+    color: $color-grey-6;
+
+    &:not(:last-child) {
+      
+    }
   }
 
   &__items {
@@ -21,11 +26,11 @@
     justify-content: center;
     align-items: flex-start;
     gap: 2.4rem;
-    flex: 0 0 35% 
+    flex: 0 0 35%;
   }
 
-  &__item{
-    display:flex;
+  &__item {
+    display: flex;
     align-items: center;
     justify-content: flex-start;
   }
