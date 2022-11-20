@@ -14,7 +14,13 @@ html {
 
 body {
     font-family: $default-font-family;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    font-weight: 400;    
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 

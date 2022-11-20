@@ -1,12 +1,39 @@
-.hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    background-color: orangered;
+.hero {
+  max-width: 114rem;
+  height: 85vh;
+  
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    &__left{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        background-color: blue;
-    }
+  &__left {
+    width: 100%;
+    background-color: rgb(0, 255, 119);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__right {
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    flex: 0 1 87%;
+  }
+
+  &__img {
+    width: 100%;
+  }
 }

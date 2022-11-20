@@ -35,6 +35,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "concurrently": "^7.5.0",
+    "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0",
     "sass": "^1.56.1"
   }
