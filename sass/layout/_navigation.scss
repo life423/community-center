@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   align-self: stretch;
-  position: relative;
+  
   font-weight: 600;
 
+
   & > * {
-    padding: 0 2rem;
     cursor: pointer;
     height: 100%;
     display: flex;
@@ -22,30 +22,48 @@
     padding: 0;
   }
 
-  &__item {
-    padding: 0 1.6rem;
 
-    background-color: $color-primary-light;
-    height: 100%;
-    align-items: center;
-    transition: all 0.5s;
 
-    :not(last-child) {
-      margin-right: 1.6rem;
-    }
-    
-  }
-
-  &__link {
+  &__link {    
     text-decoration: none;
     color: $color-grey-3;
     text-transform: uppercase;
+    display: block;
+    padding: 1.6rem 3.2rem;
   
     &:hover {
         color: $color-primary;
       
     }
   }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: red;
+  }
+
+    // &__item {
+    // padding: 0 1.6rem;
+
+    // background-color: $color-primary-light;
+    // height: 100%;
+    // align-items: center;
+    // transition: all 0.5s;
+
+    // :not(last-child) {
+    //   margin-right: 1.6rem;
+    // }
+    
+//   }
 //   &__item::before {
 //     content: '';
 //     position: absolute;

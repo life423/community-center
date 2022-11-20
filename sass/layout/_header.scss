@@ -7,9 +7,10 @@
   font-size: 1.4rem;
   height: 7rem;
   border-bottom: 1px solid var(--color-grey-light-2);
-  padding: 0 2.4rem;
+//   padding: 0 2.4rem;
 
   &__logo {
     height: 3.2rem;
+    padding-left: 2.4rem;
   }
 }
