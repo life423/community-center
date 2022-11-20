@@ -2,9 +2,8 @@
   display: flex;
   align-items: center;
   align-self: stretch;
-  
-  font-weight: 600;
 
+  font-weight: 600;
 
   & > * {
     cursor: pointer;
@@ -13,35 +12,7 @@
     align-items: center;
   }
 
-  &__list {
-    display: flex;
-    align-items: center;
-    align-self: stretch;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-
-
-  &__link {    
-    text-decoration: none;
-    color: $color-grey-3;
-    text-transform: uppercase;
-    display: block;
-    padding: 1.6rem 3.2rem;
-  
-    &:hover {
-        color: $color-primary;
-      
-    }
-  }
-
-  &__item {
-    position: relative;
-  }
-
-  &__item::before{
+  &__item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -49,38 +20,62 @@
     height: 100%;
     width: 3px;
     background-color: red;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.2s,
+      width 0.4s cubic-bezier(0,1.16,.12,1.15) 0.2s, background-color 0.1s;
   }
 
-    // &__item {
-    // padding: 0 1.6rem;
+  &__item:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
 
-    // background-color: $color-primary-light;
-    // height: 100%;
-    // align-items: center;
-    // transition: all 0.5s;
+  &__link {
+    text-decoration: none;
+    color: $color-grey-3;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.6rem 3.2rem;
 
-    // :not(last-child) {
-    //   margin-right: 1.6rem;
-    // }
-    
-//   }
-//   &__item::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 3px;
-//     width: 100%;
-//     background-color: green;
-//     transform: scale(0);
-//     transition: transform 0.2s,
-//       width 0.4s cubic-bezier(0.98, 0, 0.02, 1.01) 0.2s, background-color 0.1s;
-//   }
+    &:hover {
+      color: $color-primary;
+    }
+  }
 
-//   &__item:hover::before,
-//   &__item--active::before {
-//     transform: scale(1);
-//     height: 100%;
-//   }
+  &__item {
+    position: relative;
+  }
 
+  // &__item {
+  // padding: 0 1.6rem;
+
+  // background-color: $color-primary-light;
+  // height: 100%;
+  // align-items: center;
+  // transition: all 0.5s;
+
+  // :not(last-child) {
+  //   margin-right: 1.6rem;
+  // }
+
+  //   }
+  //   &__item::before {
+  //     content: '';
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     height: 3px;
+  //     width: 100%;
+  //     background-color: green;
+  //     transform: scale(0);
+  //     transition: transform 0.2s,
+  //       width 0.4s cubic-bezier(0.98, 0, 0.02, 1.01) 0.2s, background-color 0.1s;
+  //   }
+
+  //   &__item:hover::before,
+  //   &__item--active::before {
+  //     transform: scale(1);
+  //     height: 100%;
+  //   }
 }
