@@ -97,12 +97,19 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 2.4rem;
   letter-spacing: 2px;
-  border-bottom: 2px solid #215BA6;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
 }
 
 .u-center-text {
@@ -225,16 +232,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 2.4rem;
+  gap: 8rem;
 }
-.services__heading {
-  display: inline-block;
-  color: #333;
+.services__heading.heading-secondary {
+  border-bottom: 2px solid #215BA6;
 }
 .services__items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   gap: 2.4rem;
   flex: 0 0 35%;
@@ -243,6 +249,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-right: 2.4rem;
 }
 .services__icon {
   color: #215BA6;
@@ -252,6 +259,12 @@ body {
 .services__mission {
   margin-left: 2.4rem;
   flex: 1;
+}
+.services__text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
 }
 
 .header {
