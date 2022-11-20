@@ -82,7 +82,7 @@ body {
 
 .container {
   max-width: 140rem;
-  margin: 8rem auto;
+  margin: 0 auto 0 auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
@@ -94,6 +94,14 @@ body {
   font-size: 3.6rem;
   margin-bottom: 2.4rem;
   letter-spacing: 1.8px;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  letter-spacing: 2px;
 }
 
 .u-center-text {
@@ -136,8 +144,9 @@ body {
   text-transform: uppercase;
   background-color: #215BA6;
   border-radius: 9px;
-  color: #fff;
+  color: #FCFCFE;
   font-weight: bold;
+  transition: all 0.2s;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -200,6 +209,47 @@ body {
 }
 .hero__btn:not(:last-child) {
   margin-right: 2.4rem;
+}
+.hero__btn--learn:link, .hero__btn--learn:visited {
+  background-color: #FCFCFE;
+  color: #215BA6;
+}
+
+.services {
+  padding: 4.8rem 2.4rem;
+  width: 100%;
+  background-color: #d5e3f5;
+  font-size: 1.6rem;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+.services__heading {
+  color: #215BA6;
+}
+.services__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+  flex: 0 0 35%;
+}
+.services__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.services__icon {
+  color: #215BA6;
+  width: 2.2rem;
+  height: auto;
+}
+.services__mission {
+  margin-left: 2.4rem;
+  flex: 1;
 }
 
 .header {
