@@ -3,12 +3,16 @@
   height: 75vh;
 
   &__heading{
-    color: $color-primary;
+    color: $color-grey-6;
   }
 
   &__text{
     line-height: 1.6;
     margin-bottom: 4.8rem;
+    color: $color-grey-6;
+    font-size: 2rem;
+
+    
   }
   
   
@@ -58,6 +62,8 @@
   }
 
   &__btn{
-    
+    &:not(:last-child){
+      margin-right: 2.4rem;
+    }
   }
 }
