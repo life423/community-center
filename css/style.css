@@ -123,6 +123,3 @@ body {
   font-size: 1.6rem;
   transition: all 0.2s;
 }
-.nav__item:hover {
-  background-color: #D5E3F5;
-}
