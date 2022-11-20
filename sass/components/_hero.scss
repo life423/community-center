@@ -37,6 +37,8 @@
 
     &--content{
         width: 48rem;
+
+        
     }
 
   }
@@ -64,6 +66,11 @@
   &__btn{
     &:not(:last-child){
       margin-right: 2.4rem;
+    }
+    &--learn:link,
+    &--learn:visited{
+      background-color: $color-white;
+      color: $color-primary;
     }
   }
 }

@@ -136,8 +136,9 @@ body {
   text-transform: uppercase;
   background-color: #215BA6;
   border-radius: 9px;
-  color: #fff;
+  color: #FCFCFE;
   font-weight: bold;
+  transition: all 0.2s;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -200,6 +201,16 @@ body {
 }
 .hero__btn:not(:last-child) {
   margin-right: 2.4rem;
+}
+.hero__btn--learn:link, .hero__btn--learn:visited {
+  background-color: #FCFCFE;
+  color: #215BA6;
+}
+
+.services {
+  height: 20vh;
+  width: 100%;
+  background-color: #D5E3F5;
 }
 
 .header {
