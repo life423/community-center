@@ -142,6 +142,10 @@ body {
 .hero__heading {
   color: #215BA6;
 }
+.hero__text {
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
 .hero__content {
   height: 100%;
   display: flex;
@@ -159,7 +163,7 @@ body {
   align-items: center;
 }
 .hero__left--content {
-  width: 32rem;
+  width: 48rem;
 }
 .hero__right {
   padding: 2.4rem;
