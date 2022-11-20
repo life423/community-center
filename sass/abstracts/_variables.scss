@@ -6,32 +6,46 @@ $bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
+/* Color Theme Swatches in Hex */
+$Learning-Center-1: #F28B49;
+$Learning-Center-2: #A65A29;
+$Learning-Center-3: #215BA6;
+$Learning-Center-4: #F2D218;
+$Learning-Center-5: #A69119;
+
 
 //colors
-$color-primary: #3237F0;
-$color-primary-light: #7073f5;
+$color-primary: #215BA6;
+$color-primary-light: #D5E3F5;
 $color-primary-dark: #2327a8;
 
+$color-primary-1: #3084F2;
+$color-primary-2: #5A81B5;
+$color-primary-3: #215BA6;
+$color-primary-4: #D5E3F5;
+$color-primary-5: #173F73;
+
+$color-secondary: #F2D218;
 $color-secondary-light: #F0B946;
 $color-secondary-dark: #c09438;
 
-$color-tertiary-light: #F02E58;
-$color-tertiary-dark: #c02546;
+
+$color-grey-1: #EBEBEB;
+$color-grey-2: #ABABAB;
+$color-grey-3: #5E5E5E;
+$color-grey-4: #6B6B6B;
+$color-grey-5: #454545;
 
 
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
 
 $color-white: #fff;
 $color-black: #000;
 
+
 //FONT
 $default-font-size: 1.6rem;
+$default-font-family: 'Montserrat', sans-serif;
+$default-font-weight: 400;
 
 // Font sizes px
 // 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
