@@ -110,6 +110,12 @@ body {
   margin-top: 10rem !important;
 }
 
+.hero__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
 .header {
   background-color: #D5E3F5;
   color: #215BA6;
@@ -156,3 +162,5 @@ body {
   font-size: 1.6rem;
   transition: all 0.2s;
 }
+
+/*# sourceMappingURL=style.css.map */
