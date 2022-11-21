@@ -1,52 +1,4 @@
 /* Color Theme Swatches in Hex */
-/*
---- 01 TYPOGRAPHY SYSTEM
-
-
-
-- Font weights
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
-
-- Line heights
-Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
-Large: 1.8
-
-- Letter spacing
--0.5px
-0.75px
-
-
-
-
-
-#888
-#767676 (lightest grey allowed on #fff)
-#6f6f6f (lightest grey allowed on #fdf2e9)
-#555
-#333
-
-
-
---- 05 SHADOWS
-
-0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
---- 06 BORDER-RADIUS
-
-Default: 9px
-Medium: 11px
-
---- 07 WHITESPACE
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
 *,
 *::after,
 *::before {
@@ -69,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 140rem;
+  max-width: 160rem;
   margin: 0 auto 0 auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
@@ -164,124 +116,6 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#bell-img {
-  transform: scale(0.9624);
-  -webkit-clip-path: circle(49% at 50% 50%);
-          clip-path: circle(49% at 50% 50%);
-}
-
-#frazier__img {
-  transform: scale(0.8624);
-  -webkit-clip-path: circle(44% at 50% 50%);
-          clip-path: circle(44% at 50% 50%);
-}
-
-.contact {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 4.8rem;
-  background-color: #EBEBEB;
-  height: 60vh;
-  width: 100%;
-  -moz-column-gap: 4.8rem;
-       column-gap: 4.8rem;
-  row-gap: 5rem;
-  background-color: #EBEBEB;
-}
-.contact__card {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-.contact__title {
-  color: #FCFCFE;
-  font-size: 1.8rem;
-  font-weight: 500;
-  position: relative;
-  text-align: center;
-  top: 18.7%;
-}
-.contact__img-box {
-  height: 100%;
-  background-color: #338BFF;
-  flex: 0 0 37%;
-}
-.contact__img-box--bell {
-  flex: 0 0 37%;
-}
-.contact__img.frazier__img {
-  position: relative;
-  -webkit-clip-path: circle(44% at 50% 50%);
-          clip-path: circle(44% at 50% 50%);
-  top: 44%;
-  transform: scale(0.8624) translateY(-50%);
-  width: 100%;
-}
-.contact__img.bell__img {
-  position: relative;
-  top: 46.5%;
-  width: 100%;
-  transform: scale(0.7024) translateY(-72%);
-  -webkit-clip-path: circle(49% at 50% 50%);
-          clip-path: circle(49% at 50% 50%);
-}
-.contact__info {
-  padding-top: 2.4rem;
-  padding-left: 2.4rem;
-  flex: 1;
-  background-color: #FCFCFE;
-  height: 100%;
-  padding: 3.2rem;
-}
-.contact__header {
-  flex: 0 0 100%;
-  text-align: center;
-}
-.contact__name {
-  font-size: 1.6rem;
-  margin-bottom: 1.6rem;
-  padding-top: 0.8rem;
-  border-bottom: 2px solid #338BFF;
-}
-.contact__text {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  margin-bottom: 4.8rem;
-}
-.contact__bold {
-  font-weight: 600;
-}
-.contact__list-item {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  list-style: none;
-}
-.contact__list-item:not(:last-child) {
-  margin-bottom: 0.8rem;
-}
-.contact__card {
-  border: 2px solid #215BA6;
-  border-radius: 1.2rem;
-  flex: 0 0 48%;
-  height: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.contact__email {
-  text-decoration: none;
-  color: #338BFF;
-}
-
-.hero {
-  height: 75vh;
-}
 .hero__heading {
   color: #333;
 }
