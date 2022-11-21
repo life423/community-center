@@ -35,7 +35,7 @@
     font-weight: 500;
     position: relative;
     text-align: center;
-    top: 21%;
+    top: 18.7%;
   }
   &__img-box {
     height: 100%;
@@ -51,7 +51,7 @@
   &__img.frazier__img {
     position: relative;
     clip-path: circle(44% at 50% 50%);
-    top: 50%;
+    top: 44%;
     transform: scale(0.8624) translateY(-50%);
     width: 100%;
   }
@@ -62,7 +62,7 @@
 
     width: 100%;
 
-    transform: scale(0.7024) translateY(-50%);
+    transform: scale(0.7024) translateY(-72%);
     clip-path: circle(49% at 50% 50%);
   }
 
@@ -81,7 +81,7 @@
   }
 
   &__name {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     margin-bottom: 1.6rem;
     padding-top: 0.8rem;
     border-bottom: 2px solid $color-primary-6;
