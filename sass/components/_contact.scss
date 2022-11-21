@@ -17,6 +17,8 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+   
+    overflow: hidden;
   }
   &__title {
     color: $color-white;
@@ -111,6 +113,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid $color-white;
 
   &__img-box {
     height: 100%;

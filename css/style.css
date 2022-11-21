@@ -184,6 +184,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .contact__title {
   color: #FCFCFE;
@@ -269,6 +270,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid #FCFCFE;
 }
 #frazier__img-box {
   height: 100%;
