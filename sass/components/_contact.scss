@@ -12,6 +12,11 @@
   row-gap: 5rem;
   background-color: $color-grey-1;
 
+  &__img-box {
+    height: 100%;
+    background-color: $color-primary-6;
+  }
+
   &__header {
     flex: 0 0 100%;
     text-align: center;
@@ -22,14 +27,17 @@
     border-radius: 1.2rem;
     flex: 0 0 48%;
     height: 80%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__name {
   }
 
-  &__img-box {
-    // margin-top: auto;
-  }
+  
 
   &__img {
   }
@@ -58,15 +66,13 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  
 
   &__img-box {
     height: 100%;
     background-color: $color-primary-6;
-    
   }
 
-  &__title{
+  &__title {
     color: $color-white;
     font-size: 1.8rem;
     font-weight: 500;
@@ -95,33 +101,28 @@
   &__name {
     font-size: 2.4rem;
     margin-bottom: 1.6rem;
-    padding-top: .8rem;
+    padding-top: 0.8rem;
     border-bottom: 2px solid $color-primary-6;
-    
-   
   }
 
   &__text {
     line-height: 1.6;
     font-size: $default-font-size;
-    
+
     margin-bottom: 4.8rem;
   }
   &__list {
-    
   }
 
-  &__bold{
+  &__bold {
     font-weight: 600;
   }
   &__list-item {
-
     font-size: 1.2rem;
     line-height: 1.6;
     &:not(:last-child) {
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
     }
-    
   }
 
   &__email {
