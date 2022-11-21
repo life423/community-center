@@ -4,60 +4,48 @@
   justify-content: flex-start;
   align-items: center;
   padding: 4.8rem 0;
-  
+  background-color: $color-grey-1;
 
-  &__header{
+  &__header {
     flex: 0 0 100%;
-    text-align: center;    
+    text-align: center;
   }
-
-  
 
   &__director {
     flex: 1 0 50%;
 
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
     flex-direction: column;
     align-items: center;
-    
-
+    padding: 2.4rem;
   }
 
-  
-
-  &__name{
-
-    
+  &__name {
   }
 
   &__img-box {
-
+    
   }
 
   &__img {
-
   }
 
   &__list {
-
-
- 
   }
   &__list-item {
-
-  } 
-  
+  }
 
   &__email {
-
   }
 }
 
-#bell-img {
-
+#bell-img {  
+  
+  clip-path: circle(49% at 50% 50%);
 }
 #frazier-img {
-  transform: scale(0.6724);
-
+  
+  transform: scale(0.8624);
+  clip-path: circle(44% at 50% 50%);
 }
