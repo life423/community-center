@@ -66,6 +66,15 @@
     
   }
 
+  &__title{
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    top: 21%;
+  }
+
   &__img {
     position: relative;
     top: 50%;
@@ -87,6 +96,7 @@
     font-size: 2.4rem;
     margin-bottom: 1.6rem;
     padding-top: .8rem;
+    border-bottom: 2px solid $color-primary-6;
     
    
   }
@@ -95,10 +105,14 @@
     line-height: 1.6;
     font-size: $default-font-size;
     
-    margin-bottom: 6.4rem;
+    margin-bottom: 4.8rem;
   }
   &__list {
     
+  }
+
+  &__bold{
+    font-weight: 600;
   }
   &__list-item {
 
@@ -111,6 +125,8 @@
   }
 
   &__email {
+    text-decoration: none;
+    color: $color-primary-6;
   }
 }
 
