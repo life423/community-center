@@ -10,7 +10,7 @@
   width: 100%;
   column-gap: 4.8rem;
   row-gap: 5rem;
-  background-color: aqua;
+  background-color: $color-grey-1;
 
   &__header {
     flex: 0 0 100%;
@@ -58,10 +58,12 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 2.4em;
+  
 
   &__img-box {
     height: 100%;
+    background-color: $color-primary-6;
+    
   }
 
   &__img {
@@ -73,24 +75,39 @@
   }
 
   &__info {
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
     flex: 1;
+    background-color: $color-white;
+    height: 100%;
+    padding: 3.2rem;
   }
 
   &__name {
     font-size: 2.4rem;
-    margin-bottom: 2.4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.6rem;
+    padding-top: .8rem;
+    
+   
   }
 
   &__text {
     line-height: 1.6;
     font-size: $default-font-size;
-    margin-bottom: 3rem;
+    
+    margin-bottom: 6.4rem;
   }
   &__list {
-    margin-bottom: 3rem;
+    
   }
   &__list-item {
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+    &:not(:last-child) {
+      margin-bottom: .8rem;
+    }
+    
   }
 
   &__email {

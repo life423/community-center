@@ -177,7 +177,7 @@ body {
   -moz-column-gap: 4.8rem;
        column-gap: 4.8rem;
   row-gap: 5rem;
-  background-color: aqua;
+  background-color: #EBEBEB;
 }
 .contact__header {
   flex: 0 0 100%;
@@ -209,10 +209,10 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 2.4em;
 }
 #frazier__img-box {
   height: 100%;
+  background-color: #338BFF;
 }
 #frazier__img {
   position: relative;
@@ -221,20 +221,29 @@ body {
   width: 100%;
 }
 #frazier__info {
+  padding-top: 2.4rem;
+  padding-left: 2.4rem;
   flex: 1;
+  background-color: #FCFCFE;
+  height: 100%;
+  padding: 3.2rem;
 }
 #frazier__name {
   font-size: 2.4rem;
-  margin-bottom: 2.4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.6rem;
+  padding-top: 0.8rem;
 }
 #frazier__text {
   line-height: 1.6;
   font-size: 1.6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6.4rem;
 }
-#frazier__list {
-  margin-bottom: 3rem;
+#frazier__list-item {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+#frazier__list-item:not(:last-child) {
+  margin-bottom: 0.8rem;
 }
 #bell {
   background-color: yellow;
