@@ -193,6 +193,7 @@ body {
   text-underline-offset: 8px;
   text-align: center;
   padding-bottom: 0.8rem;
+  color: #215BA6;
 }
 .contact__director {
   height: 100%;
@@ -239,16 +240,6 @@ body {
   text-decoration: none;
 }
 
-#frazier-img {
-  -webkit-clip-path: circle(24.1% at 50% 50%);
-          clip-path: circle(24.1% at 50% 50%);
-  width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  -o-object-position: 50% 69%;
-     object-position: 50% 69%;
-}
-
 #bell-img {
   -webkit-clip-path: circle(21.2% at 50% 50%);
           clip-path: circle(21.2% at 50% 50%);
@@ -265,8 +256,8 @@ body {
   width: 100%;
   -o-object-fit: scale-down;
      object-fit: scale-down;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 78%;
+     object-position: 50% 78%;
   transform: translateY(49px);
 }
 
