@@ -1,91 +1,135 @@
+#bell-img {
+  transform: scale(0.9624);
+  clip-path: circle(49% at 50% 50%);
+}
+#frazier__img {
+  transform: scale(0.8624);
+  clip-path: circle(44% at 50% 50%);
+}
+
 .contact {
-  background-color: $color-grey-1;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
-  padding: 4.8rem 0;
-  font-family: $default-font-family;
-  font-size: $default-font-size;
   align-content: center;
+  padding: 4.8rem;
+  background-color: $color-grey-1;
+  height: 60vh;
+  width: 100%;
+  column-gap: 4.8rem;
+  row-gap: 5rem;
+  background-color: $color-grey-1;
 
-  &__main-header{
-    text-decoration: underline;
-    flex: 0 1 100%;    
-    text-underline-offset: 8px;
-    text-align: center;
-    padding-bottom: .8rem;
-    color: $color-primary-3; 
-    
-    
-  }
-
-  
-
-  &__director {
-    height: 100%;
-    width: 35rem;
+  &__card {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-  }
-
-  &__heading{
-    text-align: center;
-    padding-top: 3px;
-    transform: translateY(6.5rem);
-
-    
-  }
-
-  &__img-box {
-    max-width: 35rem;
-    height: 33rem;
-  }
-
-  &__img {
-    clip-path: circle(25.7% at 50% 50%);
-    width: 100%;
-    object-fit: scale-down;
-    object-position: 50% 50%;
-  }
-
-  &__list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.2rem;
-    text-align: left;
 
-    // margin-left: 8.2rem;
-    &-item {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 1.6rem;
-      width: 52%;
+    overflow: hidden;
+  }
+  &__title {
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    top: 18.7%;
+  }
+  &__img-box {
+    height: 100%;
+    background-color: $color-primary-6;
+    flex: 0 0 37%;
+
+    &--bell{
+      flex: 0 0 37%;
+      
     }
   }
-  
+
+  &__img.frazier__img {
+    position: relative;
+    clip-path: circle(44% at 50% 50%);
+    top: 44%;
+    transform: scale(0.8624) translateY(-50%);
+    width: 100%;
+  }
+
+  &__img.bell__img {
+    position: relative;
+    top: 46.5%;
+
+    width: 100%;
+
+    transform: scale(0.7024) translateY(-72%);
+    clip-path: circle(49% at 50% 50%);
+  }
+
+  &__info {
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+    flex: 1;
+    background-color: $color-white;
+    height: 100%;
+    padding: 3.2rem;
+  }
+
+  &__header {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-top: 0.8rem;
+    border-bottom: 2px solid $color-primary-6;
+  }
+
+  &__text {
+    line-height: 1.6;
+    font-size: $default-font-size;
+    margin-bottom: 4.8rem;
+  }
+
+  &__bold {
+    font-weight: 600;
+  }
+
+  &__list-item {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    list-style: none;
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__card {
+    border: 2px solid $color-primary-3;
+    border-radius: 1.2rem;
+    flex: 0 0 48%;
+    height: 80%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__email {
-    color: $color-primary-3;
     text-decoration: none;
+    color: $color-primary-6;
   }
 }
 
-#bell-img {
-  clip-path: circle(21.2% at 50% 50%);
-  width: 100%;
-  object-fit: scale-down;
-  object-position: 50% 50%;
-}
-#frazier-img {
-  clip-path: circle(21.2% at 50% 50%);
-  width: 100%;
-  object-fit: scale-down;
-  object-position: 50% 78%;
-  transform: translateY(49px);
-}
+// .bell-img {
+//   transform: scale(0.9624);
+//   clip-path: circle(49% at 50% 50%);
+// }
+
+// .frazier__img {
+//   transform: scale(0.8624);
+//   clip-path: circle(44% at 50% 50%);
+// }

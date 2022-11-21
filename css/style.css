@@ -2,8 +2,7 @@
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
 
 - Font weights
 Default: 400
@@ -22,20 +21,9 @@ Large: 1.8
 -0.5px
 0.75px
 
---- 02 COLORS
 
-- Primary: #e67e22
-- Tints:
-#fdf2e9
-#fae5d3
-#eb984e
 
-- Shades: 
-#cf711f
-#45260a
 
-- Accents:
-- Greys
 
 #888
 #767676 (lightest grey allowed on #fff)
@@ -176,89 +164,119 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+#bell-img {
+  transform: scale(0.9624);
+  -webkit-clip-path: circle(49% at 50% 50%);
+          clip-path: circle(49% at 50% 50%);
+}
+
+#frazier__img {
+  transform: scale(0.8624);
+  -webkit-clip-path: circle(44% at 50% 50%);
+          clip-path: circle(44% at 50% 50%);
+}
+
 .contact {
-  background-color: #EBEBEB;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
-  padding: 4.8rem 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
   align-content: center;
+  padding: 4.8rem;
+  background-color: #EBEBEB;
+  height: 60vh;
+  width: 100%;
+  -moz-column-gap: 4.8rem;
+       column-gap: 4.8rem;
+  row-gap: 5rem;
+  background-color: #EBEBEB;
 }
-.contact__main-header {
-  text-decoration: underline;
-  flex: 0 1 100%;
-  text-underline-offset: 8px;
-  text-align: center;
-  padding-bottom: 0.8rem;
-  color: #215BA6;
-}
-.contact__director {
-  height: 100%;
-  width: 35rem;
+.contact__card {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
 }
-.contact__heading {
+.contact__title {
+  color: #FCFCFE;
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
   text-align: center;
-  padding-top: 3px;
-  transform: translateY(6.5rem);
+  top: 18.7%;
 }
 .contact__img-box {
-  max-width: 35rem;
-  height: 33rem;
+  height: 100%;
+  background-color: #338BFF;
+  flex: 0 0 37%;
 }
-.contact__img {
-  -webkit-clip-path: circle(25.7% at 50% 50%);
-          clip-path: circle(25.7% at 50% 50%);
+.contact__img-box--bell {
+  flex: 0 0 37%;
+}
+.contact__img.frazier__img {
+  position: relative;
+  -webkit-clip-path: circle(44% at 50% 50%);
+          clip-path: circle(44% at 50% 50%);
+  top: 44%;
+  transform: scale(0.8624) translateY(-50%);
   width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
 }
-.contact__list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-  text-align: left;
+.contact__img.bell__img {
+  position: relative;
+  top: 46.5%;
+  width: 100%;
+  transform: scale(0.7024) translateY(-72%);
+  -webkit-clip-path: circle(49% at 50% 50%);
+          clip-path: circle(49% at 50% 50%);
+}
+.contact__info {
+  padding-top: 2.4rem;
+  padding-left: 2.4rem;
+  flex: 1;
+  background-color: #FCFCFE;
+  height: 100%;
+  padding: 3.2rem;
+}
+.contact__header {
+  flex: 0 0 100%;
+  text-align: center;
+}
+.contact__name {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  padding-top: 0.8rem;
+  border-bottom: 2px solid #338BFF;
+}
+.contact__text {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+.contact__bold {
+  font-weight: 600;
 }
 .contact__list-item {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  list-style: none;
+}
+.contact__list-item:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.contact__card {
+  border: 2px solid #215BA6;
+  border-radius: 1.2rem;
+  flex: 0 0 48%;
+  height: 80%;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
-  gap: 1.6rem;
-  width: 52%;
 }
 .contact__email {
-  color: #215BA6;
   text-decoration: none;
-}
-
-#bell-img {
-  -webkit-clip-path: circle(21.2% at 50% 50%);
-          clip-path: circle(21.2% at 50% 50%);
-  width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-}
-
-#frazier-img {
-  -webkit-clip-path: circle(21.2% at 50% 50%);
-          clip-path: circle(21.2% at 50% 50%);
-  width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  -o-object-position: 50% 78%;
-     object-position: 50% 78%;
-  transform: translateY(49px);
+  color: #338BFF;
 }
 
 .hero {
