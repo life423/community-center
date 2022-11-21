@@ -1,52 +1,97 @@
-.contact{
-    background-color: $color-grey-1;
+.contact {
+  background-color: $color-grey-1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4.8rem 0;
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  align-content: center;
+
+  &__main-header{
+    text-decoration: underline;
+    flex: 0 1 100%;    
+    text-underline-offset: 8px;
+    text-align: center;
+    padding-bottom: .8rem; 
+    
+    
+  }
+
+  
+
+  &__director {
+    height: 100%;
+    width: 35rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 4.8rem 0;
-    font-family: $default-font-family;
-    font-size: $default-font-size;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
 
-    &__director{
-        height: 100%;
-    }
-
-    &__img-box{
-        width: 35rem;
-    //    width: 550px;
-    //    height: 550px; 
-       
-          
-        
-    }
-
-    &__img{
-        clip-path: circle(25.7% at 50% 50%);
-        width: 100%;        
-        object-fit: scale-down;
-        object-position: 50% 50%;
-    }
+  &__heading{
+    text-align: center;
+    padding-top: 3px;
+    transform: translateY(6.5rem);
 
     
+  }
 
-    &__list{
-        list-style-type: none;
-    }
-}
+  &__img-box {
+    max-width: 35rem;
+    height: 33rem;
+  }
 
-#frazier-img{
-    clip-path: circle(24.1% at 50% 50%);
-    width: 100%;        
-    object-fit: scale-down;
-    object-position: 50% 69%;
-
-}
-
-#bell-img{
-    clip-path: circle(21.2% at 50% 50%);
-    width: 100%;        
+  &__img {
+    clip-path: circle(25.7% at 50% 50%);
+    width: 100%;
     object-fit: scale-down;
     object-position: 50% 50%;
+  }
 
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: left;
+
+    // margin-left: 8.2rem;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.6rem;
+      width: 52%;
+    }
+  }
+  
+
+  &__email {
+    color: $color-primary-3;
+    text-decoration: none;
+  }
 }
 
+#frazier-img {
+  clip-path: circle(24.1% at 50% 50%);
+  width: 100%;
+  object-fit: scale-down;
+  object-position: 50% 69%;
+}
+
+#bell-img {
+  clip-path: circle(21.2% at 50% 50%);
+  width: 100%;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+}
+#frazier-img {
+  clip-path: circle(21.2% at 50% 50%);
+  width: 100%;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  transform: translateY(49px);
+}
