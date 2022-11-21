@@ -112,6 +112,15 @@ body {
   color: #333;
 }
 
+.heading-quaternary {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -167,6 +176,54 @@ body {
 .btn:active, .btn:focus {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+  background-color: #EBEBEB;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4.8rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+.contact__director {
+  height: 100%;
+}
+.contact__img-box {
+  width: 35rem;
+}
+.contact__img {
+  -webkit-clip-path: circle(25.7% at 50% 50%);
+          clip-path: circle(25.7% at 50% 50%);
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.contact__list {
+  list-style-type: none;
+}
+
+#frazier-img {
+  -webkit-clip-path: circle(24.1% at 50% 50%);
+          clip-path: circle(24.1% at 50% 50%);
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: 50% 69%;
+     object-position: 50% 69%;
+}
+
+#bell-img {
+  -webkit-clip-path: circle(21.2% at 50% 50%);
+          clip-path: circle(21.2% at 50% 50%);
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .hero {
