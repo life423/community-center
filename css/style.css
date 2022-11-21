@@ -178,37 +178,35 @@ body {
 .contact {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 4.8rem 15%;
+  align-content: center;
+  padding: 4.8rem;
   background-color: #EBEBEB;
-  height: 75vh;
+  height: 60vh;
   width: 100%;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
-  align-content: flex-end;
+  -moz-column-gap: 4.8rem;
+       column-gap: 4.8rem;
+  row-gap: 5rem;
+  background-color: aqua;
 }
 .contact__header {
   flex: 0 0 100%;
   text-align: center;
 }
-.contact__director {
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  flex: 1 0 40%;
+.contact__card {
   border: 2px solid #215BA6;
+  border-radius: 1.2rem;
+  flex: 0 0 48%;
+  height: 65%;
   display: flex;
   flex-flow: row wrap;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 2.4rem;
-  border-radius: 1.2rem;
-  max-width: 39.2vh;
-  height: 90%;
+}
+.contact__list {
+  list-style: none;
 }
 #bell-img {
+  transform: scale(0.9624);
   -webkit-clip-path: circle(49% at 50% 50%);
           clip-path: circle(49% at 50% 50%);
 }
@@ -219,6 +217,47 @@ body {
           clip-path: circle(44% at 50% 50%);
 }
 
+#frazier {
+  background-color: red;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 1.2rem 0;
+}
+#frazier__name {
+  background-color: rgb(127, 163, 255);
+  flex: 0 0 60%;
+  margin-left: 3.2rem;
+}
+#frazier__img-box {
+  flex: 0 0 1%;
+  background-color: rgb(255, 133, 127);
+}
+#frazier__img {
+  background-color: rgb(127, 255, 136);
+}
+#frazier__list {
+  background-color: rgb(100, 109, 43);
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+}
+#frazier__list-item {
+  background-color: rgb(210, 127, 255);
+  display: block;
+  float: left;
+}
+#frazier__email {
+  background-color: rgb(223, 255, 127);
+}
+
+#bell {
+  background-color: yellow;
+}
+#bell__list {
+  list-style: none;
+}
 .hero {
   height: 75vh;
 }

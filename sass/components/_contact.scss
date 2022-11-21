@@ -1,14 +1,16 @@
 .contact {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 4.8rem 15%;
+  align-content: center;
+  padding: 4.8rem;
   background-color: $color-grey-1;
-  height: 75vh;
+  height: 60vh;
   width: 100%;
-  column-gap: 10%;
-  align-content: flex-end;
+  column-gap: 4.8rem;
+  row-gap: 5rem;
+  background-color: aqua;
   
 
   &__header {
@@ -16,35 +18,28 @@
     text-align: center;
   }
 
-  &__director {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    flex: 1 0 40%;
+  &__card {
     border: 2px solid $color-primary-3;
+    border-radius: 1.2rem;
+    flex: 0 0 48%;
+    height: 65%;
+
     display: flex;
     flex-flow: row wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
-    align-items: center;
-    padding: 2.4rem;
-    border-radius: 1.2rem;
-    max-width: 39.2vh;
-    height: 90%;
   }
 
   &__name {
   }
 
   &__img-box {
-    
+    // margin-top: auto;
   }
 
   &__img {
   }
 
   &__list {
+    list-style: none;
   }
   &__list-item {
   }
@@ -53,12 +48,79 @@
   }
 }
 
-#bell-img {  
-  
+#bell-img {
+  transform: scale(0.9624);
   clip-path: circle(49% at 50% 50%);
 }
 #frazier-img {
-  
   transform: scale(0.8624);
   clip-path: circle(44% at 50% 50%);
 }
+
+#frazier{
+  background-color: red;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 1.2rem 0;
+    // background-color: rgb(151, 151, 194);
+  &__name {
+    background-color: rgb(127, 163, 255);
+    flex: 0 0 60%;
+    margin-left: 3.2rem;
+  }
+
+  &__img-box {
+    // margin-top: auto;
+    flex: 0 0 1%;
+    background-color: rgb(255, 133, 127);
+    
+  }
+
+  &__img {
+    background-color: rgb(127, 255, 136);
+    
+  }
+
+  &__list {
+    background-color: rgb(100, 109, 43);
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.6rem;
+    font-size: $default-font-size;
+    
+  }
+  &__list-item {
+    background-color: rgb(210, 127, 255);
+    display: block;
+    float: left;
+  }
+
+  &__email {
+    background-color: rgb(223, 255, 127);
+  }
+}
+
+
+#bell {
+  background-color: yellow;
+  &__name {
+  }
+
+  &__img-box {
+    // margin-top: auto;
+  }
+
+  &__img {
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__list-item {
+  }
+
+  &__email {
+  }
+}
+
