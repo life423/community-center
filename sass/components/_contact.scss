@@ -11,7 +11,6 @@
   column-gap: 4.8rem;
   row-gap: 5rem;
   background-color: aqua;
-  
 
   &__header {
     flex: 0 0 100%;
@@ -22,11 +21,7 @@
     border: 2px solid $color-primary-3;
     border-radius: 1.2rem;
     flex: 0 0 48%;
-    height: 65%;
-
-    display: flex;
-    flex-flow: row wrap;
-
+    height: 80%;
   }
 
   &__name {
@@ -53,56 +48,54 @@
   transform: scale(0.9624);
   clip-path: circle(49% at 50% 50%);
 }
-#frazier-img {
+#frazier__img {
   transform: scale(0.8624);
   clip-path: circle(44% at 50% 50%);
 }
 
-#frazier{
-  background-color: red;
+#frazier {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
-  align-content: center;
-  padding: 1.2rem;
-  gap: 1.2rem 0;
-    // background-color: rgb(151, 151, 194);
-  &__name {
-    background-color: rgb(127, 163, 255);
-    flex: 0 0 60%;
-    margin-left: 3.2rem;
-  }
+  gap: 2.4em;
 
   &__img-box {
-    // margin-top: auto;
-    flex: 0 0 1%;
-    background-color: rgb(255, 133, 127);
-    
+    height: 100%;
   }
 
   &__img {
-    background-color: rgb(127, 255, 136);
-    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
   }
 
-  &__list {
-    background-color: rgb(100, 109, 43);
-    list-style: none;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 1.6rem;
+  &__info {
+    flex: 1;
+  }
+
+  &__name {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    line-height: 1.6;
     font-size: $default-font-size;
-    
+    margin-bottom: 3rem;
+  }
+  &__list {
+    margin-bottom: 3rem;
   }
   &__list-item {
-    background-color: rgb(210, 127, 255);
-    display: block;
-    float: left;
   }
 
   &__email {
-    background-color: rgb(223, 255, 127);
   }
 }
-
 
 #bell {
   background-color: yellow;
@@ -125,4 +118,3 @@
   &__email {
   }
 }
-

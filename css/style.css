@@ -21,20 +21,9 @@ Large: 1.8
 -0.5px
 0.75px
 
---- 02 COLORS
 
-- Primary: #e67e22
-- Tints:
-#fdf2e9
-#fae5d3
-#eb984e
 
-- Shades: 
-#cf711f
-#45260a
 
-- Accents:
-- Greys
 
 #888
 #767676 (lightest grey allowed on #fff)
@@ -198,9 +187,7 @@ body {
   border: 2px solid #215BA6;
   border-radius: 1.2rem;
   flex: 0 0 48%;
-  height: 65%;
-  display: flex;
-  flex-flow: row wrap;
+  height: 80%;
 }
 .contact__list {
   list-style: none;
@@ -211,48 +198,44 @@ body {
           clip-path: circle(49% at 50% 50%);
 }
 
-#frazier-img {
+#frazier__img {
   transform: scale(0.8624);
   -webkit-clip-path: circle(44% at 50% 50%);
           clip-path: circle(44% at 50% 50%);
 }
 
 #frazier {
-  background-color: red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
-  align-content: center;
-  padding: 1.2rem;
-  gap: 1.2rem 0;
-}
-#frazier__name {
-  background-color: rgb(127, 163, 255);
-  flex: 0 0 60%;
-  margin-left: 3.2rem;
+  gap: 2.4em;
 }
 #frazier__img-box {
-  flex: 0 0 1%;
-  background-color: rgb(255, 133, 127);
+  height: 100%;
 }
 #frazier__img {
-  background-color: rgb(127, 255, 136);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+#frazier__info {
+  flex: 1;
+}
+#frazier__name {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
+}
+#frazier__text {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
 }
 #frazier__list {
-  background-color: rgb(100, 109, 43);
-  list-style: none;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1.6rem;
-  font-size: 1.6rem;
+  margin-bottom: 3rem;
 }
-#frazier__list-item {
-  background-color: rgb(210, 127, 255);
-  display: block;
-  float: left;
-}
-#frazier__email {
-  background-color: rgb(223, 255, 127);
-}
-
 #bell {
   background-color: yellow;
 }
