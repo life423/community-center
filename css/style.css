@@ -113,12 +113,10 @@ body {
 }
 
 .heading-quaternary {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
   letter-spacing: 2px;
   color: #333;
-  margin-bottom: 2.4rem;
 }
 
 .u-center-text {
@@ -181,17 +179,36 @@ body {
 .contact {
   background-color: #EBEBEB;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 4.8rem 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  align-content: center;
+}
+.contact__main-header {
+  text-decoration: underline;
+  flex: 0 1 100%;
+  text-underline-offset: 8px;
+  text-align: center;
+  padding-bottom: 0.8rem;
 }
 .contact__director {
   height: 100%;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact__heading {
+  text-align: center;
+  padding-top: 3px;
+  transform: translateY(6.5rem);
 }
 .contact__img-box {
-  width: 35rem;
+  max-width: 35rem;
+  height: 33rem;
 }
 .contact__img {
   -webkit-clip-path: circle(25.7% at 50% 50%);
@@ -204,6 +221,22 @@ body {
 }
 .contact__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: left;
+}
+.contact__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  width: 52%;
+}
+.contact__email {
+  color: #215BA6;
+  text-decoration: none;
 }
 
 #frazier-img {
@@ -224,6 +257,17 @@ body {
      object-fit: scale-down;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+}
+
+#frazier-img {
+  -webkit-clip-path: circle(21.2% at 50% 50%);
+          clip-path: circle(21.2% at 50% 50%);
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  transform: translateY(49px);
 }
 
 .hero {
