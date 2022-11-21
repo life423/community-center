@@ -1,3 +1,12 @@
+#bell-img {
+  transform: scale(0.9624);
+  clip-path: circle(49% at 50% 50%);
+}
+#frazier__img {
+  transform: scale(0.8624);
+  clip-path: circle(44% at 50% 50%);
+}
+
 .contact {
   display: flex;
   flex-flow: row wrap;
@@ -17,6 +26,8 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+
+    overflow: hidden;
   }
   &__title {
     color: $color-white;
@@ -29,13 +40,30 @@
   &__img-box {
     height: 100%;
     background-color: $color-primary-6;
+    flex: 0 0 37%;
+
+    &--bell{
+      flex: 0 0 37%;
+      
+    }
   }
 
-  &__img {
+  &__img.frazier__img {
     position: relative;
+    clip-path: circle(44% at 50% 50%);
     top: 50%;
-    transform: translateY(-50%);
+    transform: scale(0.8624) translateY(-50%);
     width: 100%;
+  }
+
+  &__img.bell__img {
+    position: relative;
+    top: 46.5%;
+
+    width: 100%;
+
+    transform: scale(0.7024) translateY(-50%);
+    clip-path: circle(49% at 50% 50%);
   }
 
   &__info {
@@ -94,81 +122,14 @@
     text-decoration: none;
     color: $color-primary-6;
   }
-
 }
 
-#bell-img {
-  transform: scale(0.9624);
-  clip-path: circle(49% at 50% 50%);
-}
-#frazier__img {
-  transform: scale(0.8624);
-  clip-path: circle(44% at 50% 50%);
-}
+// .bell-img {
+//   transform: scale(0.9624);
+//   clip-path: circle(49% at 50% 50%);
+// }
 
-#frazier {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  &__img-box {
-    height: 100%;
-    background-color: $color-primary-6;
-  }
-
-  &__title {
-    color: $color-white;
-    font-size: 1.8rem;
-    font-weight: 500;
-    position: relative;
-    text-align: center;
-    top: 21%;
-  }
-
-  &__img {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 100%;
-  }
-
-  &__info {
-    padding-top: 2.4rem;
-    padding-left: 2.4rem;
-    flex: 1;
-    background-color: $color-white;
-    height: 100%;
-    padding: 3.2rem;
-  }
-
-  &__name {
-    font-size: 2.4rem;
-    margin-bottom: 1.6rem;
-    padding-top: 0.8rem;
-    border-bottom: 2px solid $color-primary-6;
-  }
-
-  &__text {
-    line-height: 1.6;
-    font-size: $default-font-size;
-    margin-bottom: 4.8rem;
-  }
-
-  &__bold {
-    font-weight: 600;
-  }
-  &__list-item {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    &:not(:last-child) {
-      margin-bottom: 0.8rem;
-    }
-  }
-
-  &__email {
-    text-decoration: none;
-    color: $color-primary-6;
-  }
-}
+// .frazier__img {
+//   transform: scale(0.8624);
+//   clip-path: circle(44% at 50% 50%);
+// }
