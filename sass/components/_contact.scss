@@ -3,8 +3,13 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  padding: 4.8rem 0;
+  padding: 4.8rem 15%;
   background-color: $color-grey-1;
+  height: 75vh;
+  width: 100%;
+  column-gap: 10%;
+  align-content: flex-end;
+  
 
   &__header {
     flex: 0 0 100%;
@@ -12,13 +17,21 @@
   }
 
   &__director {
-    flex: 1 0 50%;
-
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    flex: 1 0 40%;
+    border: 2px solid $color-primary-3;
     display: flex;
     flex-flow: row wrap;
     flex-direction: column;
+    justify-content: space-evenly;
+    
     align-items: center;
     padding: 2.4rem;
+    border-radius: 1.2rem;
+    max-width: 39.2vh;
+    height: 90%;
   }
 
   &__name {
