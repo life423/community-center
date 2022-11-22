@@ -116,6 +116,28 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.contact {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+.contact__header {
+  background-color: aqua;
+  margin-bottom: 0;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.contact__left-card {
+  background-color: greenyellow;
+  height: 300px;
+}
+.contact__right-card {
+  background-color: rgb(196, 114, 114);
+  height: 300px;
+}
+
 .hero__heading {
   color: #333;
 }
