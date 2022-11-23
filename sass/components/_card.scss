@@ -1,5 +1,11 @@
 .card{
+    height: 20rem;
+    width: 40rem;
+    border-radius: 9px;
     display: flex;
+    border: 1px solid $color-grey-1;
+    overflow: hidden;
+    
 
     &__img-box{
         width: 12.8rem;
@@ -13,6 +19,24 @@
     &__content{
         
     }
+
+    &__header{
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;        
+    }
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item{
+        
+    }
+    
 
 
 }
