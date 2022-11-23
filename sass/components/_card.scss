@@ -1,15 +1,25 @@
 .card{
-    height: 20rem;
-    width: 40rem;
+    height: 22rem;
+    width: 44em;
     border-radius: 9px;
     display: flex;
-    border: 1px solid $color-grey-1;
+    border: 1px solid $color-grey-6;
     overflow: hidden;
+    justify-content: space-between;
+    gap: 2.4rem;
+    background-color: #d5e3f5;
+    
+   
     
 
     &__img-box{
         width: 12.8rem;
         height: auto;
+        margin-left: 2.4rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__img{
@@ -17,14 +27,16 @@
     }
 
     &__content{
-        
+        margin-right: 2.4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     &__header{
-        font-size: 2.4rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        letter-spacing: 2px;        
+          margin-bottom: .8rem;    
     }
 
     &__list{
@@ -34,7 +46,17 @@
     }
 
     &__item{
-        
+        font-size: 1.2rem;
+
+        &:not(:last-child){
+            margin-bottom: .4rem;
+        }
+    }
+
+    &__email{
+        text-decoration: none;
+        cursor: pointer;
+        color: primary-color-3;
     }
     
 
