@@ -172,6 +172,10 @@ body {
   color: primary-color-3;
 }
 
+#bell {
+  transform: scale(0.83);
+}
+
 .hero__heading {
   color: #333;
 }
