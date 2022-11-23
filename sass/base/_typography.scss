@@ -12,7 +12,6 @@
   font-weight: 500;
   margin-bottom: 2.4rem;
   letter-spacing: 2px;
-  
 }
 
 .heading-tertiary {
@@ -20,14 +19,20 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
-  color: $color-grey-6; 
+  color: $color-grey-6;
 }
 
-.heading-quaternary{
+.heading-quaternary {
   font-size: 1.8rem;
   text-transform: uppercase;
-  
+
   letter-spacing: 2px;
   color: $color-grey-6;
-   
+}
+
+.heading-five {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
 }

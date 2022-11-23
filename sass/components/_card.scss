@@ -1,0 +1,64 @@
+.card{
+    height: 22rem;
+    width: 44em;
+    border-radius: 9px;
+    display: flex;
+    border: 1px solid $color-grey-6;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 2.4rem;
+    background-color: #d5e3f5;
+    
+   
+    
+
+    &__img-box{
+        width: 12.8rem;
+        height: auto;
+        margin-left: 2.4rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img{
+     width: 100%;   
+    }
+
+    &__content{
+        margin-right: 2.4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__header{
+          margin-bottom: .8rem;    
+    }
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item{
+        font-size: 1.2rem;
+
+        &:not(:last-child){
+            margin-bottom: .4rem;
+        }
+    }
+
+    &__email{
+        text-decoration: none;
+        cursor: pointer;
+        color: primary-color-3;
+    }
+    
+
+
+}
