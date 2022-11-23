@@ -173,7 +173,7 @@ body {
 }
 
 #bell {
-  transform: scale(0.83);
+  transform: scale(0.8) translateY(-9px);
 }
 
 .hero__heading {
