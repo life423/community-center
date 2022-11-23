@@ -1,12 +1,12 @@
 .card{
     height: 22rem;
-    width: 44em;
+    width: 52rem;
     border-radius: 9px;
     display: flex;
     border: 1px solid $color-grey-6;
     overflow: hidden;
-    justify-content: space-between;
-    gap: 2.4rem;
+    justify-content: space-evenly;
+    
     background-color: #d5e3f5;
     
    
@@ -33,6 +33,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        
     }
 
     &__header{
@@ -62,3 +64,4 @@
 
 
 }
+
