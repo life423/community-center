@@ -236,6 +236,7 @@ body {
   gap: 8rem;
 }
 .services__heading.heading-secondary {
+  display: inline-block;
   border-bottom: 2px solid #215BA6;
   padding-bottom: 1.6rem;
 }
