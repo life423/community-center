@@ -223,7 +223,7 @@ body {
 }
 
 .services {
-  padding: 4.8rem 2.4rem;
+  padding: 4.8rem;
   width: 100%;
   height: 100%;
   background-color: #d5e3f5;
@@ -233,19 +233,23 @@ body {
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 8.6rem;
 }
 .services__heading.heading-secondary {
+  display: inline-block;
   border-bottom: 2px solid #215BA6;
   padding-bottom: 1.6rem;
 }
+.services__heading.heading-tertiary {
+  display: inline-block;
+}
 .services__items {
+  height: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  height: 27.8rem;
-  flex: 0 0 35%;
+  justify-content: space-between;
+  gap: 3.2rem;
+  flex: 0 0 40%;
 }
 .services__item {
   display: flex;
@@ -260,8 +264,7 @@ body {
   margin-right: 0.8rem;
 }
 .services__mission {
-  margin-left: 2.4rem;
-  flex: 1;
+  flex: 0 0 60%;
   height: 100%;
 }
 .services__text {
