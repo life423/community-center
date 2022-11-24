@@ -15,10 +15,8 @@
   
 
 
-  &__img-box{
-    
-    flex: 0 0 30%;
-    
+  &__img-box{    
+    flex: 0 0 30%;    
     height: auto;
   }
 
@@ -28,7 +26,11 @@
     object-fit: cover;
   }
 
-  
+  &__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   &__header {
     font-size: 2rem;

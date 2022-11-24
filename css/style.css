@@ -354,6 +354,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.mission__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .mission__header {
   font-size: 2rem;
   margin-bottom: 1.6rem;
