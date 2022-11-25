@@ -12,6 +12,12 @@
   background-color: $color-grey-1;
   color: $color-grey-6;
 
+  @include respond(cards){
+    display: flex;
+    flex-direction: column;
+    
+  }
+
   &__header {
     
     margin-bottom: 0;

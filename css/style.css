@@ -10,6 +10,21 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -250,8 +265,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 3.2rem;
-  flex: 0 0 40%;
+  padding-right: 9.6rem;
 }
 .services__item {
   display: flex;
@@ -288,6 +304,12 @@ body {
   height: 100%;
   background-color: #EBEBEB;
   color: #333;
+}
+@media only screen and (max-width: 66.9em) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .contact__header {
   margin-bottom: 0;
