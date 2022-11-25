@@ -262,6 +262,13 @@ body {
   justify-content: space-between;
   gap: 8.6rem;
 }
+@media only screen and (max-width: 829px) {
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .services__heading.heading-secondary {
   display: inline-block;
   border-bottom: 2px solid #215BA6;
@@ -278,6 +285,11 @@ body {
   align-items: flex-start;
   gap: 3.2rem;
   padding-right: 9.6rem;
+}
+@media only screen and (max-width: 829px) {
+  .services__items {
+    padding-bottom: 26.8rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .services__items {
