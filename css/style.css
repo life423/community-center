@@ -132,6 +132,7 @@ body {
   overflow: hidden;
   justify-content: space-evenly;
   background-color: #d5e3f5;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
 }
 .card__img-box {
   width: 12.8rem;
@@ -143,6 +144,7 @@ body {
 }
 .card__img {
   width: 100%;
+  border-radius: 9px;
 }
 .card__content {
   margin-right: 2.4rem;
@@ -292,8 +294,21 @@ body {
   grid-column: 1/3;
   grid-row: 1/2;
 }
-.contact__right {
-  background-color: rgb(229, 233, 126);
+
+.footer {
+  text-align: center;
+  background-color: #d5e3f5;
+  padding: 4.8rem 0;
+  color: #333;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__item {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 .header {
@@ -308,6 +323,67 @@ body {
 .header__logo {
   height: 3.2rem;
   margin-left: 3.2rem;
+}
+
+.location {
+  background-color: #EBEBEB;
+  width: 100%;
+  height: 100%;
+  gap: 4.8rem;
+  padding: 4.6rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+.location__header {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  margin-bottom: 0;
+}
+.location__content {
+  color: #333;
+  font-size: 3rem;
+}
+.mission {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4.8rem;
+  justify-content: space-between;
+  background-color: #D5E3F5;
+  color: #333;
+  padding: 4.8rem;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+.mission__img-box {
+  flex: 0 0 30%;
+  height: auto;
+}
+.mission__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 9px;
+}
+.mission__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mission__header {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+.mission__text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .nav {
