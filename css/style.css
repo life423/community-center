@@ -50,6 +50,11 @@ body {
   margin-bottom: 2.4rem;
   letter-spacing: 1.8px;
 }
+@media only screen and (max-width: 700px) {
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+}
 
 .heading-secondary {
   font-size: 3rem;
@@ -149,6 +154,11 @@ body {
   background-color: #d5e3f5;
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
 }
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 44rem;
+  }
+}
 .card__img-box {
   width: 12.8rem;
   height: auto;
@@ -167,6 +177,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 1rem;
 }
 .card__header {
   margin-bottom: 0.8rem;
@@ -191,11 +202,22 @@ body {
 .hero__heading {
   color: #333;
 }
+@media only screen and (max-width: 600px) {
+  .hero__heading {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+}
 .hero__text {
   line-height: 1.6;
   margin-bottom: 4.8rem;
   color: #333;
   font-size: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .hero__text {
+    font-size: 1.6rem;
+  }
 }
 .hero__content {
   height: 100%;
@@ -208,6 +230,8 @@ body {
 @media only screen and (max-width: 829px) {
   .hero__content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .hero__left {
@@ -336,6 +360,13 @@ body {
   .contact {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact {
+    flex: 0 1 auto;
   }
 }
 .contact__header {

@@ -15,7 +15,14 @@
   @include respond(cards){
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex: 0 1 auto;   
   }
 
   &__header {
