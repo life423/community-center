@@ -32,6 +32,10 @@
     align-items: flex-start;
     gap: 3.2rem;
     padding-right: 9.6rem;
+
+    @media only screen and (max-width: 600px) {
+      padding-right: 0;
+    }
     
   }
 

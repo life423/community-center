@@ -1,21 +1,15 @@
 .hero {
-  
-
-
-  &__heading{
+  &__heading {
     color: $color-grey-6;
   }
 
-  &__text{
+  &__text {
     line-height: 1.6;
     margin-bottom: 4.8rem;
     color: $color-grey-6;
     font-size: 2rem;
-
-    
   }
-  
-  
+
   &__content {
     height: 100%;
     display: flex;
@@ -23,29 +17,30 @@
     justify-content: center;
     gap: 2.4rem;
     background-color: $color-grey-1;
+
+    @media only screen and (max-width: 829px) {
+      flex-direction: column;
+    }
     
   }
 
   &__left {
     width: 100%;
     padding: 2.4rem;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &--content{
-        width: 48rem;
-
-        
+    &--content {
+      width: 48rem;
     }
-
   }
 
   &__right {
     padding: 2.4rem;
-    
+
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -55,20 +50,24 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+
     flex: 0 0 87%;
+
+    @media only screen and (max-width: 829px) {
+      flex: 1;
+    }
   }
 
   &__img {
     width: 100%;
   }
 
-  &__btn{
-    &:not(:last-child){
+  &__btn {
+    &:not(:last-child) {
       margin-right: 2.4rem;
     }
     &--learn:link,
-    &--learn:visited{
+    &--learn:visited {
       background-color: $color-white;
       color: $color-primary;
     }
