@@ -371,14 +371,22 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   border-bottom: 1px solid var(--color-grey-light-2);
+  overflow: hidden;
 }
 .header__logo-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: auto;
-  width: 4.5rem;
+  width: 14rem;
+  transform: translateY(7px);
 }
 .header__logo {
-  width: 100%;
   height: auto;
+  width: 14rem;
 }
 
 .location {
