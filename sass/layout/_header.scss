@@ -26,6 +26,10 @@
     height: auto;
     width: 14rem;
     transform: translateY(7px);
+    @media only screen and (max-width: 818px) {
+        width: 8rem;
+        height: 2.4rem;
+    }
   }
 
   &__logo {
