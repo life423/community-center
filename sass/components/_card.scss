@@ -8,8 +8,10 @@
     justify-content: space-evenly;    
     background-color: #d5e3f5;
     box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, .3); 
-   
     
+    @media only screen and (max-width: 600px) {
+      width: 44rem;
+    }
 
     &__img-box{
         width: 12.8rem;
@@ -32,6 +34,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        padding: 1rem;
 
         
     }
@@ -63,4 +66,5 @@
 
 
 }
+
 
