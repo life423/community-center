@@ -353,6 +353,12 @@ body {
   height: 8rem;
   border-bottom: 1px solid var(--color-grey-light-2);
   overflow: hidden;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 60vh;
+  }
 }
 .header__logo-box {
   display: flex;
@@ -361,6 +367,12 @@ body {
   align-items: center;
   width: 8rem;
   height: 8rem;
+}
+@media only screen and (max-width: 600px) {
+  .header__logo-box {
+    align-self: flex-start;
+    position: absolute;
+  }
 }
 .header__logo {
   height: 100%;
@@ -469,6 +481,10 @@ body {
   .nav {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 }
 .nav > * {
