@@ -17,7 +17,7 @@
   &__link:link,
   &__link:visited {
     text-decoration: none;
-    color: $color-grey-6;
+    color: $color-primary-3;
     text-transform: uppercase;
     display: block;
     padding: 1.6rem 3.2rem;
@@ -27,7 +27,8 @@
 
   &__link:hover,
   &__link:active {
-    color: $color-primary;
+    color: $color-primary-1;
+    
     transform: translateY(-0.3px) scale(1.03);
     text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
   }

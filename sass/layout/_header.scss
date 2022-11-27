@@ -5,36 +5,25 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
-  height: 7rem;
-  border-bottom: 1px solid var(--color-grey-light-2);overflow: hidden;
-  
-  
+  height: 8rem;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  overflow: hidden; 
 
-  
   &__logo-box{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    align-items: center;
+    
+    width: 8rem;
+    height: 8rem;  
+  }
+  
+  &__logo { 
+    
     height: 100%;
-    
-    display: flex;
-    align-items: center;
-  
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    
-    height: auto;
-    width: 14rem;
-    transform: translateY(7px);
-    @media only screen and (max-width: 818px) {
-        width: 8rem;
-        height: 2.4rem;
-    }
+    width: auto;
   }
-
-  &__logo {
-    height: auto;
-    width: 14rem;
-  }
-
+  
 }
