@@ -36,7 +36,7 @@ onresize = e => {
 
 menuIcon.addEventListener('click', e => {
   e.preventDefault();
-  header.style.height = '40vh';
+  header.style.height = '60vh';
   closeIcon.classList.toggle('hide');
   menuIcon.classList.toggle('hide');
   navItems.forEach(item => {
