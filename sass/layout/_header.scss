@@ -10,9 +10,10 @@
   overflow: hidden;
   position: relative;
   transition: all .2s;
-  // @media only screen and (max-width: 600px) {
-  //   height: 60vh;
-  // }
+  @media only screen and (max-width: 600px) {
+    height: 14vh;
+    position: relative;
+  }
 
   &__logo-box {
     display: flex;
@@ -25,6 +26,8 @@
     @media only screen and (max-width: 600px) {
       align-self: flex-start;
       position: absolute;
+      top: 2rem;
+      left: 3.8rem;
     }
   }
 
