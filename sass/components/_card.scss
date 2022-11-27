@@ -40,7 +40,8 @@
     }
 
     &__header{
-          margin-bottom: .8rem;    
+          margin-bottom: .8rem;
+          color: $color-primary-3;    
     }
 
     &__list{
@@ -60,7 +61,7 @@
     &__email{
         text-decoration: none;
         cursor: pointer;
-        color: primary-color-3;
+        color: $color-primary-3;
     }
     
 
