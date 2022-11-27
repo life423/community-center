@@ -33,9 +33,9 @@
     border-radius: 9px;
   }
 
+
   &__content {
     margin-right: 2.4rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,19 +53,21 @@
     margin: 0;
   }
 
+
   &__item {
     font-size: 1.2rem;
     text-decoration: none;
 
+    &__email{
+        text-decoration: none;
+        cursor: pointer;
+        color: $color-primary-3;
+    }
+    
+
+
     &:not(:last-child) {
       margin-bottom: 0.4rem;
     }
-  }
-
-  &__email {
-    text-decoration: none;
-    cursor: pointer;
-    color: primary-color-3;
-    text-align: none;
   }
 }
