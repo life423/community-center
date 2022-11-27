@@ -1,6 +1,6 @@
 const header = document.querySelector('header');
 const menu = document.querySelector('.menu__icon');
-const nav = document.querySelector('nav');
+const navItems = document.querySelectorAll('.nav__item');
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -19,7 +19,17 @@ onresize = e => {
 
   if (width <= 600) {
     menu.classList.remove('hide');
+    navItems.forEach(item => {
+        item.classList.add('hide');
+    });  
+    
   } else if (width >= 600) {
     menu.classList.add('hide');
+    navItems.forEach(item => {
+      item.classList.remove('hide');
+    });  
+
+
+
   }
 };
