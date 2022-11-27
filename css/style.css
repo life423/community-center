@@ -157,8 +157,9 @@ body {
 @media only screen and (max-width: 600px) {
   .card {
     box-shadow: none;
-    border: none;
-    height: 15vh;
+    border-top: 2px solid #333;
+    height: 30vh;
+    border-bottom: 2px solid #333;
   }
 }
 .card__img-box {
@@ -191,6 +192,7 @@ body {
 }
 .card__item {
   font-size: 1.2rem;
+  text-decoration: none;
 }
 .card__item:not(:last-child) {
   margin-bottom: 0.4rem;
@@ -199,6 +201,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: primary-color-3;
+  text-align: none;
 }
 
 .hero {
@@ -371,30 +374,21 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
-  height: 7rem;
+  height: 8rem;
   border-bottom: 1px solid var(--color-grey-light-2);
   overflow: hidden;
 }
 .header__logo-box {
-  height: 100%;
   display: flex;
-  align-items: center;
-  display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  height: auto;
-  width: 14rem;
-  transform: translateY(7px);
-}
-@media only screen and (max-width: 818px) {
-  .header__logo-box {
-    width: 8rem;
-    height: 2.4rem;
-  }
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
 }
 .header__logo {
-  height: auto;
-  width: 14rem;
+  height: 100%;
+  width: auto;
 }
 
 .location {
@@ -424,7 +418,7 @@ body {
   color: #333;
   font-size: 2rem;
 }
-@media only screen and (max-width: 818px) {
+@media only screen and (max-width: 621px) {
   .location__map-box {
     display: none;
   }
