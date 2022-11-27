@@ -159,6 +159,7 @@ body {
     box-shadow: none;
     border-top: 2px solid #333;
     height: 30vh;
+    border-radius: 0;
     border-bottom: 2px solid #333;
   }
 }
@@ -201,14 +202,11 @@ body {
 .card__email {
   text-decoration: none;
   cursor: pointer;
-  color: primary-color-3;
-
-
+  color: $primary-color-3;
 }
 
 .hero {
   background-color: #EBEBEB;
-  
   
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -436,6 +434,7 @@ body {
     display: none;
   }
 }
+
 .mission {
   display: flex;
   flex-direction: row;
