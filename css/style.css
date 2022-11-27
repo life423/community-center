@@ -387,14 +387,12 @@ body {
   overflow: hidden;
 }
 .header__logo-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 8rem;
   height: 8rem;
-}
-@media only screen and (max-width: 818px) {
-  .header__logo-box {
-    width: auto;
-    height: 2.4rem;
-  }
 }
 .header__logo {
   height: 100%;
