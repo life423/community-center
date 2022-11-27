@@ -356,6 +356,12 @@ body {
   position: relative;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 14vh;
+    position: relative;
+  }
+}
 .header__logo-box {
   display: flex;
   flex-direction: row;
@@ -368,6 +374,8 @@ body {
   .header__logo-box {
     align-self: flex-start;
     position: absolute;
+    top: 2rem;
+    left: 3.8rem;
   }
 }
 .header__logo {
@@ -515,8 +523,8 @@ body {
   width: 4.4rem;
   height: 4.4rem;
   position: absolute;
-  top: 16px;
-  right: 26px;
+  top: 3.8rem;
+  right: 3.8rem;
 }
 
 .close__icon {
@@ -524,6 +532,6 @@ body {
   width: 4.4rem;
   height: 4.4rem;
   position: absolute;
-  top: 16px;
-  right: 26px;
+  top: 3.8rem;
+  right: 3.8rem;
 }

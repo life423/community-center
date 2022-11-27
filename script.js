@@ -47,7 +47,7 @@ menuIcon.addEventListener('click', e => {
 
 closeIcon.addEventListener('click', e => {
   e.preventDefault();
-  header.style.height = '10vh';
+  header.style.height = '14vh';
   closeIcon.classList.toggle('hide');
   menuIcon.classList.toggle('hide');
   navItems.forEach(item => {
