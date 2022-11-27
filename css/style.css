@@ -10,7 +10,6 @@
 html {
   font-size: 62.5%;
 }
-
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
@@ -524,4 +523,12 @@ body {
   position: relative;
   font-size: 1.6rem;
   transition: all 0.2s;
+  stroke: red;
+  fill: red;
+}
+
+.menu__icon {
+  stroke: #215BA6;
+  width: 4.4rem;
+  height: 4.4rem;
 }

@@ -36,6 +36,14 @@
   &__item {
     position: relative;
     font-size: $default-font-size;
-    transition: all 0.2s;    
+    transition: all 0.2s;
+    stroke: red;
+    fill: red;    
   }
+}
+
+.menu__icon{
+  stroke: $color-primary-3;
+  width: 4.4rem;
+  height: 4.4rem;
 }
