@@ -10,6 +10,7 @@
 html {
   font-size: 62.5%;
 }
+
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
@@ -118,6 +119,11 @@ body {
 
 .u-margin-top-big {
   margin-top: 10rem !important;
+}
+
+/* RESPONSIVE NAVBAR */
+.hide {
+  display: none !important;
 }
 
 .btn, .btn:link, .btn:visited {
