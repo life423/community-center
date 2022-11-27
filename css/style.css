@@ -350,7 +350,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
-  height: 10vh;
+  height: 8vh;
   border-bottom: 1px solid var(--color-grey-light-2);
   overflow: hidden;
   position: relative;
