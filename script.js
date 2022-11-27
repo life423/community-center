@@ -23,8 +23,8 @@ onresize = e => {
   if (width <= 600) {
     menuIcon.classList.remove('hide');
     navItems.forEach(item => {
-    item.classList.add('hide');
-     header.style.height = '14vh';
+      item.classList.add('hide');
+      header.style.height = '14vh';
     });
   } else if (width >= 600) {
     header.style.height = '6vh';
@@ -41,10 +41,9 @@ menuIcon.addEventListener('click', e => {
   closeIcon.classList.toggle('hide');
   menuIcon.classList.toggle('hide');
   navItems.forEach(item => {
-    item.classList.toggle('hide');    
-  });  
+    item.classList.toggle('hide');
+  });
 });
-
 
 closeIcon.addEventListener('click', e => {
   e.preventDefault();
@@ -52,9 +51,18 @@ closeIcon.addEventListener('click', e => {
   closeIcon.classList.toggle('hide');
   menuIcon.classList.toggle('hide');
   navItems.forEach(item => {
-    item.classList.toggle('hide');    
+    item.classList.toggle('hide');
   });
 });
 
-
-
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    console.log('click');
+    closeIcon.classList.toggle('hide');
+    menuIcon.classList.toggle('hide');
+    header.style.height = '14vh';
+    navItems.forEach(item => {
+      item.classList.toggle('hide');
+    });
+  });
+});
