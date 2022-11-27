@@ -27,14 +27,11 @@
     color: $color-grey-6;
     font-size: 2rem;
   }
-
-  &__map-box {
-    @media only screen and (max-width: 612px) {
+  
+    &__map-box {
+    @media only screen and (max-width: 621px) {
         display: none;
     }
   }
-
-  &__map {
-    
-  }
 }
+

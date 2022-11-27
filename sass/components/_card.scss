@@ -1,62 +1,62 @@
-.card{
-    height: 22rem;
-    width: 52rem;
-    border-radius: 9px;
-    display: flex;
-    border: 1px solid $color-grey-6;
-    overflow: hidden;
-    justify-content: space-evenly;    
-    background-color: #d5e3f5;
-    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, .3); 
+.card {
+  height: 22rem;
+  width: 52rem;
+  border-radius: 9px;
+  display: flex;
+  border: 1px solid $color-grey-6;
+  overflow: hidden;
+  justify-content: space-evenly;
+  background-color: #d5e3f5;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
+
+  @media only screen and (max-width: 600px) {
+    box-shadow: none;
+    border-top: 2px solid $color-grey-6;
+    height: 30vh;
+
+    border-bottom: 2px solid $color-grey-6;
+
     
-    @media only screen and (max-width: 600px) {
-      width: 44rem;
-    }
+  }
 
-    &__img-box{
-        width: 12.8rem;
-        height: auto;
-        margin-left: 2.4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  &__img-box {
+    width: 12.8rem;
+    height: auto;
+    margin-left: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &__img{
-     width: 100%;
-     border-radius: 9px;   
-    }
+  &__img {
+    width: 100%;
+    border-radius: 9px;
+  }
 
-    &__content{
-        margin-right: 2.4rem;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 1rem;
+  &__content {
+    margin-right: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+  }
 
-        
-    }
+  &__header {
+    margin-bottom: 0.8rem;
+  }
 
-    &__header{
-          margin-bottom: .8rem;
-          color: $color-primary-3;    
-    }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-    &__list{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
 
-    &__item{
-        font-size: 1.2rem;
-
-        &:not(:last-child){
-            margin-bottom: .4rem;
-        }
-    }
+  &__item {
+    font-size: 1.2rem;
+    text-decoration: none;
 
     &__email{
         text-decoration: none;
@@ -66,6 +66,8 @@
     
 
 
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+  }
 }
-
-

@@ -156,7 +156,10 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .card {
-    width: 44rem;
+    box-shadow: none;
+    border-top: 2px solid #333;
+    height: 30vh;
+    border-bottom: 2px solid #333;
   }
 }
 .card__img-box {
@@ -190,6 +193,7 @@ body {
 }
 .card__item {
   font-size: 1.2rem;
+  text-decoration: none;
 }
 .card__item:not(:last-child) {
   margin-bottom: 0.4rem;
@@ -197,11 +201,15 @@ body {
 .card__email {
   text-decoration: none;
   cursor: pointer;
-  color: #215BA6;
+  color: primary-color-3;
+
+
 }
 
 .hero {
   background-color: #EBEBEB;
+  
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -420,6 +428,9 @@ body {
   color: #333;
   font-size: 2rem;
 }
+
+
+
 @media only screen and (max-width: 612px) {
   .location__map-box {
     display: none;
