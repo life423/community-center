@@ -6,7 +6,8 @@
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
     "css:postcss": "postcss ./css/style.css --use autoprefixer --no-map -o ./css/style.css -w",
-    "dev": "concurrently \"npm run watch:sass\" \"npm run css:postcss\" "
+    "dev": "concurrently \"npm run watch:sass\" \"npm run css:postcss\" ",
+    "compress:sass": "sass --no-source-map   css/style.css css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
