@@ -57,12 +57,15 @@ closeIcon.addEventListener('click', e => {
 
 navLinks.forEach(link => {
   link.addEventListener('click', e => {
-    console.log('click');
-    closeIcon.classList.toggle('hide');
-    menuIcon.classList.toggle('hide');
-    header.style.height = '14vh';
-    navItems.forEach(item => {
-      item.classList.toggle('hide');
-    });
+    
+    if (width <= 600) {
+      console.log('clicked');
+      closeIcon.classList.toggle('hide');
+      menuIcon.classList.toggle('hide');
+      header.style.height = '14vh';
+      navItems.forEach(item => {
+        item.classList.toggle('hide');
+      });
+    }
   });
 });
