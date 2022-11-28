@@ -6,7 +6,7 @@
     }
 
     @if $breakpoint == map {
-        @media only screen and (max-width: 664px) { 
+        @media only screen and (max-width: 38.8em) { 
             @content;
         }
     }
