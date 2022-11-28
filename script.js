@@ -6,13 +6,23 @@ const navLinks = document.querySelectorAll('.nav__link');
 const width = window.innerWidth;
 const height = window.innerHeight;
 
+
+const toggleMenu = () => {
+  menuIcon.classList.toggle('hide');
+  closeIcon.classList.toggle('hide');
+};
+
+const toggleNavItems = () => {
+  navItems.forEach(item => {
+    item.classList.toggle('hide');
+  });
+};
+
 window.addEventListener('load', e => {
   e.preventDefault();
   if (width <= 600) {
     menuIcon.classList.toggle('hide');
-    navItems.forEach(item => {
-      item.classList.toggle('hide');
-    });
+    toggleNavItems();
   }
 });
 
@@ -38,34 +48,23 @@ onresize = e => {
 menuIcon.addEventListener('click', e => {
   e.preventDefault();
   header.style.height = '60vh';
-  closeIcon.classList.toggle('hide');
-  menuIcon.classList.toggle('hide');
-  navItems.forEach(item => {
-    item.classList.toggle('hide');
-  });
+  toggleMenu();
+  toggleNavItems();
 });
 
 closeIcon.addEventListener('click', e => {
   e.preventDefault();
   header.style.height = '14vh';
-  closeIcon.classList.toggle('hide');
-  menuIcon.classList.toggle('hide');
-  navItems.forEach(item => {
-    item.classList.toggle('hide');
-  });
+  toggleMenu();
+  toggleNavItems();
 });
 
 navLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    
-    if (width <= 600) {
-      console.log('clicked');
-      closeIcon.classList.toggle('hide');
-      menuIcon.classList.toggle('hide');
+  link.addEventListener('click', e => {    
+    if (width <= 600) {      
+      toggleMenu();
       header.style.height = '14vh';
-      navItems.forEach(item => {
-        item.classList.toggle('hide');
-      });
+      toggleNavItems();
     }
   });
 });
