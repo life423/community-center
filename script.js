@@ -1,3 +1,5 @@
+//need to reload page on rotate
+
 const header = document.querySelector('.header');
 const menuIcon = document.querySelector('.menu__icon');
 const navItems = document.querySelectorAll('.nav__item');
@@ -35,9 +37,11 @@ onresize = e => {
     navItems.forEach(item => {
       item.classList.add('hide');
       header.style.height = '14vh';
+      menuIcon.style.stroke = 'white';
     });
   } else if (width >= 600) {
-    header.style.height = '6vh';
+    //safari treats rotate as a resize event line below for safari
+    header.style.height = '10vh';
     menuIcon.classList.add('hide');
     navItems.forEach(item => {
       item.classList.remove('hide');
