@@ -357,7 +357,6 @@ body {
 @media only screen and (max-width: 75em) {
   .header {
     height: 10vh;
-    background-color: aqua;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -378,7 +377,6 @@ body {
   .header__logo-box {
     width: 4.8rem;
     height: 4.8rem;
-    background-color: aqua;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -389,7 +387,6 @@ body {
     left: 3.8rem;
     width: 8rem;
     height: 8rem;
-    background-color: red;
   }
 }
 .header__logo {

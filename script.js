@@ -8,7 +8,6 @@ const navLinks = document.querySelectorAll('.nav__link');
 const width = window.innerWidth;
 const height = window.innerHeight;
 
-
 const toggleMenu = () => {
   menuIcon.classList.toggle('hide');
   closeIcon.classList.toggle('hide');
@@ -25,6 +24,9 @@ window.addEventListener('load', e => {
   if (width <= 600) {
     menuIcon.classList.toggle('hide');
     toggleNavItems();
+  } else if (width >= 600) {
+    menuIcon.classList.toggle('hide');
+    toggleNavItems();
   }
 });
 
@@ -33,7 +35,7 @@ onresize = e => {
   const width = e.target.innerWidth;
 
   if (width <= 600) {
-    menuIcon.classList.remove('hide');
+    menuIcon.classList.toggle('hide');
     navItems.forEach(item => {
       item.classList.add('hide');
       header.style.height = '14vh';
@@ -42,7 +44,7 @@ onresize = e => {
   } else if (width >= 600) {
     //safari treats rotate as a resize event line below for safari
     header.style.height = '10vh';
-    menuIcon.classList.add('hide');
+    menuIcon.classList.toggle('hide');
     navItems.forEach(item => {
       item.classList.remove('hide');
     });
@@ -64,8 +66,8 @@ closeIcon.addEventListener('click', e => {
 });
 
 navLinks.forEach(link => {
-  link.addEventListener('click', e => {    
-    if (width <= 600) {      
+  link.addEventListener('click', e => {
+    if (width <= 600) {
       toggleMenu();
       header.style.height = '14vh';
       toggleNavItems();
