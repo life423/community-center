@@ -365,8 +365,10 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     height: 80vh;
+    width: 100%;
+    padding: 0 3.2rem;
   }
 }
 .header__logo {
@@ -489,6 +491,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .nav {
     display: none;
+    flex: 0 0 0%;
   }
 }
 .nav > * {

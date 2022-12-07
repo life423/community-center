@@ -10,6 +10,7 @@
 
   @include respond(phone) {
     display:none;
+    flex: 0 0 0%;
 
   }
 
