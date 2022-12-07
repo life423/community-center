@@ -490,10 +490,6 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .nav {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    flex: 0 0 100%;
     background-color: rgb(194, 27, 27);
   }
 }
