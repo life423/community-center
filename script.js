@@ -30,6 +30,9 @@ window.addEventListener('load', e => {
     console.log('width less than 600');
     iconMenu.classList.remove('hide');
     icon.classList.remove('hide');
+    navItems.forEach(item => {
+      item.classList.add('hide');
+    });
     
   } else if (width >= 600) {
     iconMenu.classList.add('hide');

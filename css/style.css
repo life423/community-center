@@ -90,6 +90,11 @@ body {
   display: none !important;
 }
 
+.invisible {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   padding: 1.6rem 3.2rem;
@@ -345,6 +350,7 @@ body {
 .header {
   background-color: #D5E3F5;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
@@ -362,17 +368,16 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header {
     height: 14vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 80vh;
-    width: 100%;
-    padding: 0 3.2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header__logo-box {
+    background-color: orangered;
+    flex: 0 0 50%;
+    order: -2;
   }
 }
 .header__logo {
-  height: 100%;
   width: auto;
   height: 9rem;
   width: 9rem;
@@ -477,23 +482,26 @@ body {
 
 .nav {
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
-  align-self: stretch;
   font-weight: 600;
   position: relative;
   background-color: rgb(162, 255, 0);
 }
 @media only screen and (max-width: 37.5em) {
   .nav {
-    display: none;
-    flex: 0 0 0%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    flex: 0 0 100%;
+    background-color: rgb(194, 27, 27);
   }
 }
 .nav > * {
   cursor: pointer;
-  height: 100%;
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex: 0 1 9.6rem;
 }
 .nav__item {
@@ -516,13 +524,19 @@ body {
 }
 
 .icon {
-  stroke: #215BA6;
-  width: 4.4rem;
-  height: 4.4rem;
+  background-color: aquamarine;
+  stroke: green;
 }
 @media only screen and (max-width: 37.5em) {
   .icon {
     width: 3.2rem;
     height: 3.2rem;
+    flex: 0 0 50%;
+    background-color: aquamarine;
+    order: -1;
   }
+}
+.icon__menu {
+  width: 4.4rem;
+  height: 4.4rem;
 }

@@ -2,6 +2,7 @@
   background-color: $color-primary-light;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
@@ -17,22 +18,20 @@
 
   @include respond(phone) {
     height: 14vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 80vh;
-    width: 100%;
-    padding: 0 3.2rem;
   }
 
-  
-  
+  &__logo-box {
+    @include respond(phone) {
+      background-color: orangered;
+      flex: 0 0 50%;
+      order: -2;
+    }
+  }
+
   &__logo {
-    height: 100%;
     width: auto;
     height: 9rem;
-      width: 9rem;
+    width: 9rem;
     @include respond(phone) {
       height: 4.4rem;
       // width: 4.4rem;
