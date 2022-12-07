@@ -1,5 +1,6 @@
 .header {
   background-color: $color-primary-light;
+  
 
   display: flex;
   justify-content: space-between;
@@ -13,12 +14,22 @@
 
   @include respond(tab-land) {
     height: 10vh;
-    
   }
 
   @include respond(phone) {
     height: 14vh;
-    position: relative;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    // background-color: red;
+    
+  }
+
+  &__logo {
+    height: 100%;
+    width: auto;
   }
 
   &__logo-box {
@@ -27,27 +38,14 @@
     justify-content: center;
     align-items: center;
 
-    width: 8rem;
-    height: 8rem;
-
-    @include respond(tab-land) {
-      width: 4.8rem;
-      height: 4.8rem;
-
-    }
+    width: 9vh;
+    height: 9vh;
 
     @include respond(phone) {
-      align-self: flex-start;
-      position: absolute;
-      top: 2rem;
-      left: 3.8rem;
-      width: 8rem;
-      height: 8rem;      
+        
+        background-color: red;
     }
   }
-
-  &__logo {
-    height: 100%;
-    width: auto;
-  }
 }
+
+

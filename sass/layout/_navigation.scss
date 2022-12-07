@@ -4,16 +4,13 @@
   align-self: stretch;
 
   font-weight: 600;
-  position: relative;  
+  position: relative;
 
-  @include respond(phone){
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    transition: all .2s;
+  background-color: rgb(162, 255, 0);
+
+  @include respond(phone) {
+    display:none;
+
   }
 
   & > * {
@@ -24,7 +21,7 @@
     flex: 0 1 9.6rem;
   }
 
-  &__item {    
+  &__item {
     font-size: $default-font-size;
     transition: all 0.2s;
   }
@@ -46,23 +43,17 @@
 
     transform: translateY(-0.3px) scale(1.03);
     text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
-  }  
+  }
 }
 
-.menu__icon {
+.icon {
   stroke: $color-primary-3;
   width: 4.4rem;
   height: 4.4rem;
-  position: absolute;
-  top: 3.8rem;
-  right: 3.8rem;
+  background-color: aquamarine;
+  &menu {
+  }
+  &close {
+  }
 }
 
-.close__icon {
-  stroke: $color-primary-3;
-  width: 4.4rem;
-  height: 4.4rem;
-  position: absolute;
-  top: 3.8rem;
-  right: 3.8rem;
-}
