@@ -371,18 +371,17 @@ body {
     padding: 0 3.2rem;
   }
 }
-.header__logo-box {
-  width: 9vh;
-  height: 9vh;
-}
-@media only screen and (max-width: 37.5em) {
-  .header__logo-box {
-    background-color: red;
-  }
-}
 .header__logo {
   height: 100%;
   width: auto;
+  height: 9rem;
+  width: 9rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .header__logo {
+    height: 4.4rem;
+    width: auto;
+  }
 }
 
 .location {
@@ -520,4 +519,10 @@ body {
   stroke: #215BA6;
   width: 4.4rem;
   height: 4.4rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 }

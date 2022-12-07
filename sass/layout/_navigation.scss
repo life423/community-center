@@ -52,6 +52,12 @@
   width: 4.4rem;
   height: 4.4rem;
   // background-color: aquamarine;
+
+  @include respond(phone) {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
   &menu {
   }
   &close {

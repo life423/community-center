@@ -27,19 +27,16 @@
   }
 
   
-  &__logo-box {  
-    
-    width: 9vh;
-    height: 9vh;
-    
-    @include respond(phone) {
-      background-color: red;
-      
-
-    }
-  }
+  
   &__logo {
     height: 100%;
     width: auto;
+    height: 9rem;
+      width: 9rem;
+    @include respond(phone) {
+      height: 4.4rem;
+      // width: 4.4rem;
+      width: auto;
+    }
   }
 }
