@@ -1,9 +1,10 @@
 //need to reload page on rotate
 
 const header = document.querySelector('.header');
-const menuIcon = document.querySelector('.icon__menu');
+const icon = document.querySelector('.icon');
+const iconMenu = document.querySelector('.icon__menu');
 const navItems = document.querySelectorAll('.item__nav');
-const closeIcon = document.querySelector('.close__icon');
+const closeIcon = document.querySelector('.icon__close');
 const navLinks = document.querySelectorAll('.nav__link');
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -27,9 +28,12 @@ window.addEventListener('load', e => {
   console.log('load called');
   if (width <= 600) {
     console.log('width less than 600');
-    menuIcon.classList.remove('hide');
-  } else if (width >= 600) {
+    iconMenu.classList.remove('hide');
+    icon.classList.remove('hide');
     
+  } else if (width >= 600) {
+    iconMenu.classList.add('hide');
+    icon.classList.add('hide');
   }
 });
 
