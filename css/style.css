@@ -371,15 +371,7 @@ body {
     padding: 0 3.2rem;
   }
 }
-.header__logo {
-  height: 100%;
-  width: auto;
-}
 .header__logo-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 9vh;
   height: 9vh;
 }
@@ -387,6 +379,10 @@ body {
   .header__logo-box {
     background-color: red;
   }
+}
+.header__logo {
+  height: 100%;
+  width: auto;
 }
 
 .location {
