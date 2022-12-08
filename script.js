@@ -38,12 +38,19 @@ window.addEventListener('load', e => {
   e.preventDefault();
 
   if (width <= 600) {
+    header.style.height = '14vh';
     menuIcon.classList.remove('hide');
     icon.classList.remove('hide');
     navItems.forEach(item => {
       item.classList.add('hide');
     });
+  } else if (width > height && width <= 1200) {
+    console.log('tablet-landscape load');
+    menuIcon.classList.add('hide');
+    header.style.height = '18vh';
+    showNavItems();
   } else if (width >= 600) {
+    header.style.height = '10vh';
     menuIcon.classList.add('hide');
     icon.classList.add('hide');
     navItems.forEach(item => {
@@ -81,8 +88,8 @@ onresize = e => {
     ('fired less than 600px');
     hideNavItems();
     showMenu();
-  } else if (width > height && width >= 600) {
-    console.log('tablet-landscape');
+  } else if (width > height && width <= 1200) {
+    console.log('tablet-landscape resize');
     menuIcon.classList.add('hide');
     header.style.height = '18vh';
     showNavItems();
