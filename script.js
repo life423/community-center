@@ -5,7 +5,7 @@ const nav = document.querySelector('.nav');
 
 const icon = document.querySelector('.icon');
 const menuIcon = document.querySelector('.icon__menu');
-const navItems = document.querySelectorAll('.item__nav');
+const navItems = document.querySelectorAll('.nav__item');
 const closeIcon = document.querySelector('.icon__close');
 const navLinks = document.querySelectorAll('.nav__link');
 const width = window.innerWidth;
