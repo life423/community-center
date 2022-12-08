@@ -22,16 +22,32 @@ const hideNavItems = () => {
   });
 };
 
-// const toggleNavItems = () => {
-//   navItems.forEach(item => {
-//     item.classList.toggle('hide');
-//   });
-// };
+const showNavItems = () => {
+  navItems.forEach(item => {
+    item.classList.remove('hide');
+  });
+};
+
+const showMenu = () => {
+  menuIcon.classList.remove('hide');
+};
+
+const closeDropdown = () => {
+  closeIcon.classList.add('hide');
+  menuIcon.classList.remove('hide');
+  
+  nav.style.height = '0%';
+  header.style.height = '14vh';
+  navItems.forEach(item => {
+    item.classList.add('hide');
+  });
+};
+
 
 //NOTE load working
 window.addEventListener('load', e => {
   e.preventDefault();
-
+  closeDropdown();
   if (width <= 600) {
     menuIcon.classList.remove('hide');
     icon.classList.remove('hide');
@@ -47,14 +63,17 @@ window.addEventListener('load', e => {
 //TODO resize
 onresize = e => {
   e.preventDefault();
-
+  closeDropdown();
   const width = e.target.innerWidth;
   const height = e.target.innerHeight;
   if (width <= 600) {
     ('fired less than 600px');
     hideNavItems();
+    showMenu();
   } else if (width >= 600) {
     ('fired more than 600px');
+    menuIcon.classList.add('hide');
+    showNavItems();
   }
 };
 
@@ -98,3 +117,9 @@ closeIcon.addEventListener('click', e => {
 //     }
 //   });
 // });
+
+// const toggleNavItems = () => {
+//   navItems.forEach(item => {
+//     item.classList.toggle('hide');
+//   });
+// };
