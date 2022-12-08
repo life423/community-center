@@ -1,40 +1,55 @@
 .header {
   background-color: $color-primary-light;
-
+  height: 10vh;
+  width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem;
-  height: 8vh;
-  border-bottom: 1px solid var(--color-grey-light-2);
-  overflow: hidden;
-  position: relative;
-  transition: all 0.2s;
-
+  padding: 0 2rem;
   @include respond(phone) {
-    height: 14vh;
-    position: relative;
+    display: inline-block;
   }
+  
+  
 
-  &__logo-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    width: 8rem;
-    height: 8rem;
-
+  &__mobile-box {   
     @include respond(phone) {
-      align-self: flex-start;
-      position: absolute;
-      top: 2rem;
-      left: 3.8rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      //need to keep
+      align-items: center;
+      width: 100%;
     }
   }
 
+  @include respond(tab-land) {
+    height: 10vh;
+  }
+
+  @include respond(phone) {
+    height: 14vh;
+    width: 100%;
+  }
+
+  &__logo-box {
+    height: 9rem;
+    width: auto;
+    @include respond(phone) {
+    }
+  }
+
+ 
+
   &__logo {
+    
     height: 100%;
     width: auto;
+    @include respond(phone) {
+      height: 100%;
+      
+      width: auto;
+    }
   }
 }

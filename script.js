@@ -1,70 +1,100 @@
+//need to reload page on rotate
+
 const header = document.querySelector('.header');
-const menuIcon = document.querySelector('.menu__icon');
+const nav = document.querySelector('.nav');
+
+const icon = document.querySelector('.icon');
+const menuIcon = document.querySelector('.icon__menu');
 const navItems = document.querySelectorAll('.nav__item');
-const closeIcon = document.querySelector('.close__icon');
+const closeIcon = document.querySelector('.icon__close');
 const navLinks = document.querySelectorAll('.nav__link');
 const width = window.innerWidth;
 const height = window.innerHeight;
-
 
 const toggleMenu = () => {
   menuIcon.classList.toggle('hide');
   closeIcon.classList.toggle('hide');
 };
 
-const toggleNavItems = () => {
+const hideNavItems = () => {
   navItems.forEach(item => {
-    item.classList.toggle('hide');
+    item.classList.add('hide');
   });
 };
 
+// const toggleNavItems = () => {
+//   navItems.forEach(item => {
+//     item.classList.toggle('hide');
+//   });
+// };
+
+//NOTE load working
 window.addEventListener('load', e => {
   e.preventDefault();
-  if (width <= 600) {
-    menuIcon.classList.toggle('hide');
-    toggleNavItems();
-  }
-});
-
-onresize = e => {
-  e.preventDefault();
-  const width = e.target.innerWidth;
 
   if (width <= 600) {
     menuIcon.classList.remove('hide');
+    icon.classList.remove('hide');
     navItems.forEach(item => {
       item.classList.add('hide');
-      header.style.height = '14vh';
     });
   } else if (width >= 600) {
-    header.style.height = '6vh';
     menuIcon.classList.add('hide');
-    navItems.forEach(item => {
-      item.classList.remove('hide');
-    });
+    icon.classList.add('hide');
+  }
+});
+
+//TODO resize
+onresize = e => {
+  e.preventDefault();
+
+  const width = e.target.innerWidth;
+  const height = e.target.innerHeight;
+  if (width <= 600) {
+    ('fired less than 600px');
+    hideNavItems();
+  } else if (width >= 600) {
+    ('fired more than 600px');
   }
 };
 
 menuIcon.addEventListener('click', e => {
   e.preventDefault();
-  header.style.height = '60vh';
-  toggleMenu();
-  toggleNavItems();
+  menuIcon.classList.toggle('hide');
+  closeIcon.classList.toggle('hide');
+  nav.style.height = '60%';
+  header.style.height = '80vh';
+
+  navItems.forEach(item => {
+    item.classList.remove('hide');
+  });
 });
 
 closeIcon.addEventListener('click', e => {
   e.preventDefault();
-  header.style.height = '14vh';
   toggleMenu();
-  toggleNavItems();
-});
-
-navLinks.forEach(link => {
-  link.addEventListener('click', e => {    
-    if (width <= 600) {      
-      toggleMenu();
-      header.style.height = '14vh';
-      toggleNavItems();
-    }
+  nav.style.height = '0%';
+  header.style.height = '14vh';
+  navItems.forEach(item => {
+    item.classList.add('hide');
   });
 });
+
+// closeIcon.addEventListener('click', e => {
+//   console.log('close icon clicked');
+//   e.preventDefault();
+//   header.style.height = '14vh';
+//   toggleMenu();
+//   toggleNavItems();
+// });
+
+// navLinks.forEach(link => {
+//   console.log('nav and mneu items toggled');
+//   link.addEventListener('click', e => {
+//     if (width <= 600) {
+//       toggleMenu();
+//       header.style.height = '14vh';
+//       toggleNavItems();
+//     }
+//   });
+// });

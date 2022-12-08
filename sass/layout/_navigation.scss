@@ -1,32 +1,47 @@
 .nav {
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
-  align-self: stretch;
+  
 
   font-weight: 600;
-  position: relative;  
+  position: relative;
+  
 
-  @include respond(phone){
+  
+
+  @include respond(phone) {    
+    order: 2;
+    flex: 0 0 100%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-flow: column nowrap;
     align-items: center;
-    width: 100%;
-    transition: all .2s;
+    justify-content: center;
+    height: 0%;
+    transition: all .2s ease-in-out;
   }
 
   & > * {
     cursor: pointer;
-    height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex: 0 1 9.6rem;
+
+    @include respond(phone){
+      flex: 0 1 100%;
+      width: 100%;
+      height: 6rem;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  &__item {    
+  &__item {
     font-size: $default-font-size;
     transition: all 0.2s;
+    width: auto;
+    flex: 0 1 9.6rem;
   }
 
   &__link:link,
@@ -38,6 +53,7 @@
     padding: 1.6rem 3.2rem;
     transform: translateY(0) scale(1);
     transition: all 0.2s;
+    
   }
 
   &__link:hover,
@@ -46,23 +62,23 @@
 
     transform: translateY(-0.3px) scale(1.03);
     text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
-  }  
+  }
 }
 
-.menu__icon {
+.icon {
   stroke: $color-primary-3;
-  width: 4.4rem;
-  height: 4.4rem;
-  position: absolute;
-  top: 3.8rem;
-  right: 3.8rem;
-}
+  &__box {
+    
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.close__icon {
-  stroke: $color-primary-3;
-  width: 4.4rem;
-  height: 4.4rem;
-  position: absolute;
-  top: 3.8rem;
-  right: 3.8rem;
+  &__menu,
+  &__close {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
 }
