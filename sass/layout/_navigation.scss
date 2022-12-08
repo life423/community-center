@@ -42,6 +42,7 @@
     font-size: $default-font-size;
     transition: all 0.2s;
     width: auto;
+    flex: 0 1 9.6rem;
   }
 
   &__link:link,
@@ -66,9 +67,9 @@
 }
 
 .icon {
+  stroke: $color-primary-3;
   &__box {
-    background-color: aquamarine;
-    stroke: red;
+    
     width: auto;
     height: 100%;
     display: flex;
