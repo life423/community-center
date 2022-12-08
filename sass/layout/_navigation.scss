@@ -10,11 +10,7 @@
   background-color: rgb(162, 255, 0);
 
   @include respond(phone) {
-    
-    
-    
     background-color: rgb(194, 27, 27);
-    
   }
 
   & > * {
@@ -51,22 +47,16 @@
 }
 
 .icon {
-  background-color: aquamarine;
-  stroke: green;
-  
-
-  @include respond(phone) {
-    width: 3.2rem;
-    height: 3.2rem;
-    flex: 0 0 50%;
+  &__box {
     background-color: aquamarine;
-    order: -1;
+    stroke: red;
+    width: auto;
+    height: 100%;
   }
-  &__menu {
+
+  &__menu,
+  &__close {
     width: 4.4rem;
     height: 4.4rem;
-  }
-
-  &__close {
   }
 }

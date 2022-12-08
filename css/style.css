@@ -354,7 +354,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem;
 }
 .header__mobile-box {
   height: 100%;
@@ -368,6 +367,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header {
     height: 14vh;
+    width: 100%;
   }
 }
 .header__logo-box {
@@ -527,20 +527,13 @@ body {
   text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
 }
 
-.icon {
+.icon__box {
   background-color: aquamarine;
-  stroke: green;
+  stroke: red;
+  width: auto;
+  height: 100%;
 }
-@media only screen and (max-width: 37.5em) {
-  .icon {
-    width: 3.2rem;
-    height: 3.2rem;
-    flex: 0 0 50%;
-    background-color: aquamarine;
-    order: -1;
-  }
-}
-.icon__menu {
+.icon__menu, .icon__close {
   width: 4.4rem;
   height: 4.4rem;
 }
