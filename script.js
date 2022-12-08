@@ -32,22 +32,11 @@ const showMenu = () => {
   menuIcon.classList.remove('hide');
 };
 
-const closeDropdown = () => {
-  closeIcon.classList.add('hide');
-  menuIcon.classList.remove('hide');
-  
-  nav.style.height = '0%';
-  header.style.height = '14vh';
-  navItems.forEach(item => {
-    item.classList.add('hide');
-  });
-};
-
-
 //NOTE load working
+console.log('load fired');
 window.addEventListener('load', e => {
   e.preventDefault();
-  
+
   if (width <= 600) {
     menuIcon.classList.remove('hide');
     icon.classList.remove('hide');
@@ -57,20 +46,46 @@ window.addEventListener('load', e => {
   } else if (width >= 600) {
     menuIcon.classList.add('hide');
     icon.classList.add('hide');
+    navItems.forEach(item => {
+      item.classList.remove('hide');
+    });
   }
 });
 
 //TODO resize
+
+const close = () => {
+  closeIcon.classList.add('hide');
+
+  //add menu icon
+  menuIcon.classList.remove('hide');
+  //change nav height to 0
+  nav.style.height = '0%';
+  header.style.height = '14vh';
+
+  navItems.forEach(item => {
+    item.classList.add('hide');
+  });
+};
+
+//-any time the resize happens it should close dropdown menu
 onresize = e => {
+  console.log('resize fired');
+
+  //if less than 1200px
   e.preventDefault();
-  closeDropdown();
+
   const width = e.target.innerWidth;
   const height = e.target.innerHeight;
   if (width <= 600) {
     ('fired less than 600px');
     hideNavItems();
     showMenu();
-    
+  } else if (width > height && width >= 600) {
+    console.log('tablet-landscape');
+    menuIcon.classList.add('hide');
+    header.style.height = '14vh';
+    showNavItems();
   } else if (width >= 600) {
     ('fired more than 600px');
     menuIcon.classList.add('hide');
