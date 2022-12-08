@@ -1,9 +1,17 @@
 .header {
   background-color: $color-primary-light;
-
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  
   
 
   &__mobile-box {
+    height: 100%;
+    width: 80%;
     @include respond(phone) {
     }
   }
@@ -17,7 +25,20 @@
   }
 
   &__logo-box {
+    height: 100%;
+    width: 100%;
     @include respond(phone) {
+    }
+  }
+
+  &__logo {
+    width: auto;
+    height: 9rem;
+    width: auto;
+    @include respond(phone) {
+      height: 4.4rem;
+      
+      width: auto;
     }
   }
 
@@ -26,8 +47,8 @@
     height: 9rem;
     width: 9rem;
     @include respond(phone) {
-      height: 4.4rem;
-      // width: 4.4rem;
+      height: 100%;
+      
       width: auto;
     }
   }

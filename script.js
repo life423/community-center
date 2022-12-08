@@ -1,8 +1,10 @@
 //need to reload page on rotate
 
 const header = document.querySelector('.header');
+
+
 const icon = document.querySelector('.icon');
-const iconMenu = document.querySelector('.icon__menu');
+const menuIcon = document.querySelector('.icon__menu');
 const navItems = document.querySelectorAll('.item__nav');
 const closeIcon = document.querySelector('.icon__close');
 const navLinks = document.querySelectorAll('.nav__link');
@@ -27,15 +29,15 @@ window.addEventListener('load', e => {
   e.preventDefault();
   console.log('load called');
   if (width <= 600) {
-    console.log('width less than 600');
-    iconMenu.classList.remove('hide');
+    
+    menuIcon.classList.remove('hide');
     icon.classList.remove('hide');
     navItems.forEach(item => {
       item.classList.add('hide');
     });
     
   } else if (width >= 600) {
-    iconMenu.classList.add('hide');
+    menuIcon.classList.add('hide');
     icon.classList.add('hide');
   }
 });
