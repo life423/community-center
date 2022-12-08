@@ -47,7 +47,7 @@ const closeDropdown = () => {
 //NOTE load working
 window.addEventListener('load', e => {
   e.preventDefault();
-  closeDropdown();
+  
   if (width <= 600) {
     menuIcon.classList.remove('hide');
     icon.classList.remove('hide');
@@ -70,6 +70,7 @@ onresize = e => {
     ('fired less than 600px');
     hideNavItems();
     showMenu();
+    
   } else if (width >= 600) {
     ('fired more than 600px');
     menuIcon.classList.add('hide');
