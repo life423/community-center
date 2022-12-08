@@ -63,13 +63,11 @@ window.addEventListener('load', e => {
 
 const close = () => {
   closeIcon.classList.add('hide');
-
   //add menu icon
   menuIcon.classList.remove('hide');
   //change nav height to 0
   nav.style.height = '0%';
   header.style.height = '14vh';
-
   navItems.forEach(item => {
     item.classList.add('hide');
   });
@@ -78,6 +76,12 @@ const close = () => {
 //-any time the resize happens it should close dropdown menu
 onresize = e => {
   console.log('resize fired');
+
+  //if x on screen then close
+  if (closeIcon.classList.contains('hide') === false) {
+    close();
+    
+  }
 
   //if less than 1200px
   e.preventDefault();
