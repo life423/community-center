@@ -10,7 +10,8 @@
 
   
 
-  @include respond(phone) {    
+  @include respond(phone) {
+     
     order: 2;
     flex: 0 0 100%;
     display: flex;

@@ -22,30 +22,68 @@ const hideNavItems = () => {
   });
 };
 
-// const toggleNavItems = () => {
-//   navItems.forEach(item => {
-//     item.classList.toggle('hide');
-//   });
-// };
+const showNavItems = () => {
+  navItems.forEach(item => {
+    item.classList.remove('hide');
+  });
+};
+
+const showMenu = () => {
+  menuIcon.classList.remove('hide');
+};
 
 //NOTE load working
+console.log('load fired');
 window.addEventListener('load', e => {
   e.preventDefault();
 
   if (width <= 600) {
+    header.style.height = '14vh';
     menuIcon.classList.remove('hide');
     icon.classList.remove('hide');
     navItems.forEach(item => {
       item.classList.add('hide');
     });
+  } else if (width > height && width <= 1200) {
+    console.log('tablet-landscape load');
+    menuIcon.classList.add('hide');
+    header.style.height = '18vh';
+    showNavItems();
   } else if (width >= 600) {
+    header.style.height = '10vh';
     menuIcon.classList.add('hide');
     icon.classList.add('hide');
+    navItems.forEach(item => {
+      item.classList.remove('hide');
+    });
   }
 });
 
 //TODO resize
+
+const close = () => {
+  closeIcon.classList.add('hide');
+  //add menu icon
+  menuIcon.classList.remove('hide');
+  //change nav height to 0
+  nav.style.height = '0%';
+  header.style.height = '14vh';
+  navItems.forEach(item => {
+    item.classList.add('hide');
+  });
+};
+
+//-any time the resize happens it should close dropdown menu
 onresize = e => {
+  console.log('resize fired');
+
+  //if x on screen then close
+  if (closeIcon.classList.contains('hide') === false) {
+    close();
+    
+  }
+
+  //if less than 1200px
   e.preventDefault();
 
   const width = e.target.innerWidth;
@@ -53,8 +91,16 @@ onresize = e => {
   if (width <= 600) {
     ('fired less than 600px');
     hideNavItems();
+    showMenu();
+  } else if (width > height && width <= 1200) {
+    console.log('tablet-landscape resize');
+    menuIcon.classList.add('hide');
+    header.style.height = '18vh';
+    showNavItems();
   } else if (width >= 600) {
     ('fired more than 600px');
+    menuIcon.classList.add('hide');
+    showNavItems();
   }
 };
 
@@ -98,3 +144,9 @@ closeIcon.addEventListener('click', e => {
 //     }
 //   });
 // });
+
+// const toggleNavItems = () => {
+//   navItems.forEach(item => {
+//     item.classList.toggle('hide');
+//   });
+// };

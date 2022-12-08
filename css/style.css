@@ -362,6 +362,11 @@ body {
     display: inline-block;
   }
 }
+@media only screen and (max-width: 75em) {
+  .header {
+    height: 18vh;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .header__mobile-box {
     display: flex;
