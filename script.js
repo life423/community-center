@@ -77,6 +77,9 @@ closeIcon.addEventListener('click', e => {
   closeIcon.classList.toggle('hide');
   nav.style.height = '0%';
   header.style.height = '14vh';
+  navItems.forEach(item => {
+    item.classList.add('hide');
+  });
 });
 
 //TODO
