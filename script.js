@@ -11,10 +11,16 @@ const navLinks = document.querySelectorAll('.nav__link');
 const width = window.innerWidth;
 const height = window.innerHeight;
 
-// const toggleMenu = () => {
-//   menuIcon.classList.toggle('hide');
-//   closeIcon.classList.toggle('hide');
-// };
+const toggleMenu = () => {
+  menuIcon.classList.toggle('hide');
+  closeIcon.classList.toggle('hide');
+};
+
+const hideNavItems = () => {
+  navItems.forEach(item => {
+    item.classList.add('hide');
+  });
+};
 
 // const toggleNavItems = () => {
 //   navItems.forEach(item => {
@@ -22,9 +28,10 @@ const height = window.innerHeight;
 //   });
 // };
 
+//NOTE load working
 window.addEventListener('load', e => {
   e.preventDefault();
-  console.log('load called');
+
   if (width <= 600) {
     menuIcon.classList.remove('hide');
     icon.classList.remove('hide');
@@ -37,26 +44,19 @@ window.addEventListener('load', e => {
   }
 });
 
-// onresize = e => {
-//   e.preventDefault();
-//   const width = e.target.innerWidth;
-// console.log('resize called');
-//   if (width <= 600) {
-//     menuIcon.classList.toggle('hide');
-//     navItems.forEach(item => {
-//       item.classList.add('hide');
-//       header.style.height = '14vh';
+//TODO resize
+onresize = e => {
+  e.preventDefault();
 
-//     });
-//   } else if (width >= 600) {
-//     //safari treats rotate as a resize event line below for safari
-//     header.style.height = '10vh';
-//     menuIcon.classList.toggle('hide');
-//     navItems.forEach(item => {
-//       item.classList.remove('hide');
-//     });
-//   }
-// };
+  const width = e.target.innerWidth;
+  const height = e.target.innerHeight;
+  if (width <= 600) {
+    ('fired less than 600px');
+    hideNavItems();
+  } else if (width >= 600) {
+    ('fired more than 600px');
+  }
+};
 
 menuIcon.addEventListener('click', e => {
   e.preventDefault();
@@ -68,23 +68,17 @@ menuIcon.addEventListener('click', e => {
   navItems.forEach(item => {
     item.classList.remove('hide');
   });
-
 });
 
 closeIcon.addEventListener('click', e => {
   e.preventDefault();
-  menuIcon.classList.toggle('hide');
-  closeIcon.classList.toggle('hide');
+  toggleMenu();
   nav.style.height = '0%';
   header.style.height = '14vh';
   navItems.forEach(item => {
     item.classList.add('hide');
   });
 });
-
-//TODO
-//make navbar vertical with a transition.
-// height goes from 0 % to 100% on click
 
 // closeIcon.addEventListener('click', e => {
 //   console.log('close icon clicked');
