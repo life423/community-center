@@ -496,6 +496,12 @@ body {
     background-color: rgb(194, 27, 27);
     order: 2;
     flex: 0 0 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 0%;
+    transition: all 0.2s ease-in-out;
   }
 }
 .nav > * {
@@ -505,9 +511,19 @@ body {
   align-items: stretch;
   flex: 0 1 9.6rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .nav > * {
+    flex: 0 1 100%;
+    width: 100%;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .nav__item {
   font-size: 1.6rem;
   transition: all 0.2s;
+  width: auto;
 }
 .nav__link:link, .nav__link:visited {
   text-decoration: none;
