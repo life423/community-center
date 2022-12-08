@@ -352,6 +352,7 @@ body {
   height: 10vh;
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -499,6 +500,8 @@ body {
 @media only screen and (max-width: 37.5em) {
   .nav {
     background-color: rgb(194, 27, 27);
+    order: 1;
+    flex: 0 0 100%;
   }
 }
 .nav > * {

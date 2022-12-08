@@ -11,6 +11,8 @@
 
   @include respond(phone) {
     background-color: rgb(194, 27, 27);
+    order: 1;
+    flex: 0 0 100%;
   }
 
   & > * {
