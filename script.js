@@ -84,7 +84,7 @@ onresize = e => {
   } else if (width > height && width >= 600) {
     console.log('tablet-landscape');
     menuIcon.classList.add('hide');
-    header.style.height = '14vh';
+    header.style.height = '18vh';
     showNavItems();
   } else if (width >= 600) {
     ('fired more than 600px');
