@@ -6,14 +6,20 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
   
   
   
 
   &__mobile-box {
-    height: 100%;
-    width: 80%;
+    // height: 100%;
+    // width: 80%;
     @include respond(phone) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
     }
   }
 
@@ -27,27 +33,18 @@
   }
 
   &__logo-box {
+    height: 9rem;
+    width: auto;
+    @include respond(phone) {
+    }
+  }
+
+ 
+
+  &__logo {
+    
     height: 100%;
-    width: 100%;
-    @include respond(phone) {
-    }
-  }
-
-  &__logo {
     width: auto;
-    height: 9rem;
-    width: auto;
-    @include respond(phone) {
-      height: 4.4rem;
-      
-      width: auto;
-    }
-  }
-
-  &__logo {
-    width: auto;
-    height: 9rem;
-    width: 9rem;
     @include respond(phone) {
       height: 100%;
       
