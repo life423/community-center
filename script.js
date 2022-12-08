@@ -64,6 +64,11 @@ menuIcon.addEventListener('click', e => {
   closeIcon.classList.toggle('hide');
   nav.style.height = '60%';
   header.style.height = '80vh';
+
+  navItems.forEach(item => {
+    item.classList.remove('hide');
+  });
+
 });
 
 closeIcon.addEventListener('click', e => {

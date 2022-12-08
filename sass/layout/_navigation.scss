@@ -8,10 +8,10 @@
   position: relative;
   
 
-  background-color: rgb(162, 255, 0);
+  
 
   @include respond(phone) {
-    background-color: rgb(194, 27, 27);
+    
     order: 2;
     flex: 0 0 100%;
     display: flex;
