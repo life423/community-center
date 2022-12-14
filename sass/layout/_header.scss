@@ -18,6 +18,7 @@
 
   &__mobile-box {   
     @include respond(phone) {
+      padding-top: 1.6rem;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
@@ -37,15 +38,14 @@
   }
 
   &__logo-box {
-    height: 8rem;
+    padding-left: 1.6rem;
+    height: 4.5rem;
     width: auto;
-
   }
 
  
 
-  &__logo {
-    
+  &__logo {    
     height: 100%;
     width: auto;
     @include respond(phone) {

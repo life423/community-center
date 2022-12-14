@@ -369,6 +369,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .header__mobile-box {
+    padding-top: 1.6rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -388,7 +389,8 @@ body {
   }
 }
 .header__logo-box {
-  height: 8rem;
+  padding-left: 1.6rem;
+  height: 4.5rem;
   width: auto;
 }
 .header__logo {
