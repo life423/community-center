@@ -32,7 +32,7 @@ const showMenu = () => {
   menuIcon.classList.remove('hide');
 };
 
-//NOTE load working
+
 console.log('load fired');
 window.addEventListener('load', e => {
   e.preventDefault();
@@ -59,13 +59,11 @@ window.addEventListener('load', e => {
   }
 });
 
-//TODO resize
+
 
 const close = () => {
-  closeIcon.classList.add('hide');
-  //add menu icon
-  menuIcon.classList.remove('hide');
-  //change nav height to 0
+  closeIcon.classList.add('hide');  
+  menuIcon.classList.remove('hide');  
   nav.style.height = '0%';
   header.style.height = '14vh';
   navItems.forEach(item => {
@@ -73,17 +71,13 @@ const close = () => {
   });
 };
 
-//-any time the resize happens it should close dropdown menu
-onresize = e => {
-  console.log('resize fired');
 
-  //if x on screen then close
+onresize = e => {
   if (closeIcon.classList.contains('hide') === false) {
     close();
-    
   }
 
-  //if less than 1200px
+
   e.preventDefault();
 
   const width = e.target.innerWidth;
@@ -126,27 +120,3 @@ closeIcon.addEventListener('click', e => {
   });
 });
 
-// closeIcon.addEventListener('click', e => {
-//   console.log('close icon clicked');
-//   e.preventDefault();
-//   header.style.height = '14vh';
-//   toggleMenu();
-//   toggleNavItems();
-// });
-
-// navLinks.forEach(link => {
-//   console.log('nav and mneu items toggled');
-//   link.addEventListener('click', e => {
-//     if (width <= 600) {
-//       toggleMenu();
-//       header.style.height = '14vh';
-//       toggleNavItems();
-//     }
-//   });
-// });
-
-// const toggleNavItems = () => {
-//   navItems.forEach(item => {
-//     item.classList.toggle('hide');
-//   });
-// };

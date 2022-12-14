@@ -18,6 +18,7 @@
 
   &__mobile-box {   
     @include respond(phone) {
+      padding-top: 1.6rem;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
