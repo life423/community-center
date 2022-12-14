@@ -41,14 +41,11 @@
     padding-left: 1.6rem;
     height: 4.5rem;
     width: auto;
-    @include respond(phone) {
-    }
   }
 
  
 
-  &__logo {
-    
+  &__logo {    
     height: 100%;
     width: auto;
     @include respond(phone) {
