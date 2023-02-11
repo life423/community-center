@@ -1,14 +1,11 @@
 .contact {
-  display: grid;
-  justify-items: center;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4.8rem 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 4.8rem;
-  gap: 4.8rem;
-  width: 100%;
-  height: 100%;
+  
+  height: 65vh;
+  
   background-color: $color-grey-1;
   color: $color-grey-6;
   overflow: hidden;
@@ -24,5 +21,12 @@
     margin-bottom: 0;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+  }
+
+  &__card-container{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around
   }
 }
