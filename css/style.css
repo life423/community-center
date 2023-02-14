@@ -135,10 +135,7 @@ body {
 @media only screen and (max-width: 600px) {
   .card {
     box-shadow: none;
-    border-top: 2px solid #333;
-    height: 30vh;
-    border-radius: 0;
-    border-bottom: 2px solid #333;
+    border-radius: 9px;
   }
 }
 .card__img-box {
