@@ -325,9 +325,9 @@ body {
   color: #333;
   overflow: hidden;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 1000px) {
   .contact {
-    height: 100vh;
+    height: 167vh;
     gap: 0;
   }
 }
@@ -352,7 +352,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 1000px) {
   .contact__card-container {
     flex-direction: column;
     justify-content: center;
