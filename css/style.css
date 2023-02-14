@@ -331,6 +331,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .contact {
     height: 100vh;
+    gap: 0;
   }
 }
 @media only screen and (max-width: 66.9em) {
@@ -359,6 +360,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4.8rem;
   }
 }
 
