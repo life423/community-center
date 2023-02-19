@@ -1,28 +1,52 @@
 .contact {
-  display: grid;
-  justify-items: center;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4.8rem 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  padding: 4.8rem;
-  gap: 4.8rem;
-  width: 100%;
-  height: 100%;
+  gap: 6.4rem;
+  height: 70rem;
   background-color: $color-grey-1;
   color: $color-grey-6;
   overflow: hidden;
+
+  @media only screen and (max-width: 1000px) {
+    height: 152rem;
+    gap: 0;
+  }
 
   @include respond(cards) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   } 
+  }
 
   &__header {
+    margin-top: 3.2rem;
     margin-bottom: 0;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+  }
+
+  &__card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    // @include respond(tab-port) {
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    //   gap: 4.8rem;
+    // }
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4.8rem;
+    }
   }
 }
