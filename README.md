@@ -10,8 +10,8 @@ This project is a web application that allows users to manage the Flour Bluff Co
 
 ## 🛠 **Skills**
 
-* **Excellent problem-solving skills**, as evidenced by the way they handled the challenges of integrating the user interface with the database. :brain:
-* **The ability to work independently and as part of a team**, as evidenced by the way they collaborated with other developers to create the project. :busts_in_silhouette:
+* **Excellent problem-solving skills**, as evidenced by the way they handled the challenges of a responsive front-end website:brain:
+* **The ability to work independently :busts_in_silhouette:
 * **The ability to meet deadlines**, as evidenced by the fact that they completed the project on time and within budget. :clock12:
 
 ## 🔗 **Contact Information** 
