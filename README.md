@@ -15,6 +15,6 @@ This project is a web application that allows users to manage the Flour Bluff Co
 
 ## 🔗 **Contact Information** 
 
-If you are interested in learning more about this project or the developer, please contact [drew@drewclark.io].
+If you are interested in learning more about this project or the developer, please contact drew@drewclark.io
 
 **Visit our website at fbcoutreachcenter.org to learn more about our organization.**
