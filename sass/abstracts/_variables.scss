@@ -58,6 +58,14 @@ $font-size-h3: 2.8rem;
 $font-size-h4: 2.4rem;
 $font-size-h5: 2rem;
 
+$heading-font-sizes: (
+  h1: 4.4rem,
+  h2: 3.6rem,
+  h3: 2.8rem,
+  h4: 2.4rem,
+  h5: 2rem
+);
+
 $spacing: (
   xs: 0.2rem, // 2px
   s: 0.4rem,  // 4px
@@ -73,6 +81,32 @@ $spacing: (
   '8xl': 12.8rem // 128px
 );
 
+
+$font-sizes: (
+  xs: 1rem,  // 10px
+  s: 1.2rem, // 12px
+  m: 1.4rem, // 14px
+  l: 1.6rem, // 16px
+  xl: 1.8rem, // 18px
+  xxl: 2rem,  // 20px
+  '2xl': 2.4rem, // 24px
+  '3xl': 3rem,   // 30px
+  '4xl': 3.6rem, // 36px
+  '5xl': 4.4rem, // 44px
+  '6xl': 5.2rem, // 52px
+  '7xl': 6.2rem, // 62px
+  '8xl': 7.4rem, // 74px
+  '9xl': 8.6rem, // 86px
+  '10xl': 9.8rem // 98px
+);
+
+
+$font-weights: (
+  default: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700
+);
 
 //-Spacing system (px)
 // 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
