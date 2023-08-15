@@ -33,6 +33,7 @@
   "bugs": {
     "url": "https://github.com/project423/community-center/issues"
   },
+  "type":"module",
   "homepage": "https://github.com/project423/community-center#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
