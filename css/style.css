@@ -282,8 +282,7 @@ body {
 .hero__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .hero__text {
   font-size: 1.6rem;
@@ -552,8 +551,7 @@ body {
 .mission__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 9px;
 }
 @media only screen and (max-width: 800px) {
@@ -647,3 +645,5 @@ body {
   width: 4.4rem;
   height: 4.4rem;
 }
+
+/*# sourceMappingURL=style.css.map */
