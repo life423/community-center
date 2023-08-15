@@ -35,3 +35,31 @@
         }
     }
 }
+
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin flex-grid($columns, $gutter) {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+@mixin transition($properties...) {
+  transition: $properties;
+}
+
+
+  > * {
+    flex: 1 0 calc(100% / #{$columns} - #{$gutter});
+    margin-right: $gutter;
+    margin-bottom: $gutter;
+  }
+}
