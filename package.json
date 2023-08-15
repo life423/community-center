@@ -4,6 +4,7 @@
   "description": "A place for anyone to come learn.",
   "main": "index.js",
   "scripts": {
+    "optimize-images": "node optimize-images.js",
     "watch:sass": "sass sass/main.scss css/style.css -w",
     "css:postcss": "postcss ./css/style.css --use autoprefixer --no-map -o ./css/style.css -w",
     "dev": "concurrently \"npm run watch:sass\" \"npm run css:postcss\" ",
@@ -36,6 +37,9 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "concurrently": "^7.5.0",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0"
   },
