@@ -1,54 +1,91 @@
-// Breakpoints
-$breakpoints: (
-  largest: 120rem, // 1200px
-  large: 110rem, // 1100px
-  medium: 90rem, // 900px
-  small: 60rem, // 600px
-  smallest: 50rem // 500px
-);
 
-// Color Palette (unchanged)
-$colors: (
-  // ...
-);
+//Break Points
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
 
-// Typography
-$typography: (
-  default-font-size: 1rem, // 10px
-  default-font-family: 'Montserrat', sans-serif,
-  default-font-weight: 400,
-  headers: (
-    h1: 4.4rem, // 44px
-    h2: 3.6rem, // 36px
-    h3: 2.8rem, // 28px
-    h4: 2.4rem, // 24px
-    h5: 2rem // 20px
-  ),
-  font-weights: (
-    default: 400,
-    medium: 500,
-    semi-bold: 600,
-    bold: 700
-  ),
-  line-heights: (
-    default: 1,
-    small: 1.05,
-    medium: 1.2,
-    paragraph: 1.6,
-    large: 1.8
-  )
-);
+/* Color Theme Swatches in Hex */
+$Learning-Center-1: #F28B49;
+$Learning-Center-2: #A65A29;
+$Learning-Center-3: #215BA6;
+$Learning-Center-4: #F2D218;
+$Learning-Center-5: #A69119;
 
-// Spacing
-$spacing: (0.2rem, 0.4rem, 0.8rem, 1.2rem, 1.6rem, 2.4rem, 3.2rem, 4.8rem, 6.4rem, 8rem, 9.6rem, 12.8rem);
 
-// Shadows (unchanged)
-$shadows: (
-  default: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
-);
+$color-background: #435975;
 
-// Border Radius (unchanged)
-$border-radius: (
-  default: 0.9rem, // 9px
-  medium: 1.1rem // 11px
-);
+//colors
+$color-primary: #215BA6;
+$color-primary-light: #D5E3F5;
+$color-primary-dark: #2327a8;
+
+$color-primary-1: #3084F2;
+$color-primary-2: #5A81B5;
+$color-primary-3: #215BA6;
+$color-primary-4: #D5E3F5;
+$color-primary-5: #173F73;
+$color-primary-6: #338BFF;
+
+$color-secondary: #F2D218;
+$color-secondary-light: #F0B946;
+$color-secondary-dark: #c09438;
+
+
+$color-grey-1: #EBEBEB;
+$color-grey-2: #ABABAB;
+$color-grey-3: #5E5E5E;
+$color-grey-4: #6B6B6B;
+$color-grey-5: #454545;
+$color-grey-6: #333;
+
+
+
+$color-white: #FCFCFE;
+$color-black: #000;
+
+
+//FONT
+$default-font-size: 1.6rem;
+$default-font-family: 'Montserrat', sans-serif;
+$default-font-weight: 400;
+
+// HEADERS
+$font-size-h1: 4.4rem;
+$font-size-h2: 3.6rem;
+$font-size-h3: 2.8rem;
+$font-size-h4: 2.4rem;
+$font-size-h5: 2rem;
+
+
+
+//-Spacing system (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+// - Font sizes (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// - Font weights
+// Default: 400
+// Medium: 500
+// Semi-bold: 600
+// Bold: 700
+
+// - Line heights
+// Default: 1
+// Small: 1.05
+// Medium: 1.2
+// Paragraph default: 1.6
+// Large: 1.8
+
+
+// - 05 SHADOWS
+
+// 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+// - 06 BORDER-RADIUS
+
+// Default: 9px
+// Medium: 11px
+
