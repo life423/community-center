@@ -45,6 +45,35 @@ $color-grey-6: #333;
 $color-white: #FCFCFE;
 $color-black: #000;
 
+$colors: (
+  primary: (
+    base: #215BA6,
+    light: #D5E3F5,
+    dark: #2327a8,
+    shades: (
+      1: #3084F2,
+      2: #5A81B5,
+      3: #215BA6,
+      4: #D5E3F5,
+      5: #173F73,
+      6: #338BFF
+    )
+  ),
+  secondary: (
+    base: #F2D218,
+    light: #F0B946,
+    dark: #c09438
+  ),
+  grey: (
+    1: #EBEBEB,
+    2: #ABABAB,
+    3: #5E5E5E,
+    4: #6B6B6B,
+    5: #454545,
+    6: #333
+  )
+);
+
 
 //FONT
 $default-font-size: 1.6rem;
