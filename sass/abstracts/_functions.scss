@@ -1,0 +1,32 @@
+@function spacing($key) {
+  @return map-get($spacing, $key);
+}
+
+@function font-size($key) {
+  @return map-get($font-sizes, $key);
+}
+
+
+@function to-rem($value) {
+  @return #{$value / 10}rem;
+}
+
+
+@function font-weight($weight-key) {
+  @return map-get($font-weights, $weight-key);
+}
+
+
+@function get-heading-font-size($heading-level) {
+  @return map-get($heading-font-sizes, $heading-level);
+}
+
+@function get-color($color-group, $shade: null) {
+  $color: map-get($colors, $color-group);
+  
+  @if $shade {
+    @return map-get($color, shades.$shade);
+  } @else {
+    @return $color;
+  }
+}
