@@ -4,7 +4,6 @@
   "description": "A place for anyone to come learn.",
   "main": "index.js",
   "scripts": {
-    "optimize-images": "node optimize-images.js",
     "watch:sass": "sass sass/main.scss css/style.css -w",
     "css:postcss": "postcss ./css/style.css --use autoprefixer --no-map -o ./css/style.css -w",
     "dev": "concurrently \"npm run watch:sass\" \"npm run css:postcss\" ",
