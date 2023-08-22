@@ -430,7 +430,7 @@ body {
 
 .header {
   background-color: #D5E3F5;
-  height: 10vh;
+  padding: 0 2.4rem;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -465,7 +465,6 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .header {
-    height: 14vh;
     width: 100%;
   }
 }
