@@ -4,11 +4,12 @@
   "description": "A place for anyone to come learn.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass sass/main.scss css/style.css -w",
-    "css:postcss": "postcss ./css/style.css --use autoprefixer --no-map -o ./css/style.css -w",
-    "dev": "concurrently \"npm run watch:sass\" \"npm run css:postcss\" ",
-    "compress:sass": "sass --no-source-map   css/style.css css/style.css --style compressed"
-  },
+  "watch:sass": "sass sass/main.scss css/style.css -w",
+  "css:postcss": "postcss ./css/style.css --use autoprefixer --no-map -o ./css/style.css -w",
+  "dev": "concurrently \\\"npm run watch:sass\\\" \\\"npm run css:postcss\\\" ",
+  "compress:sass": "sass --no-source-map css/style.css css/style.css --style compressed",
+  "build": "npm run compress:sass && npm run css:postcss"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/project423/community-center.git"
