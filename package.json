@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss dist/css/style.css -w",
-    "css:postcss": "postcss ./dist/css/style.css --use autoprefixer --no-map -o ./dist/css/style.css -w",
-    "dev": "concurrently \\\"npm run watch:sass\\\" \\\"npm run css:postcss\\\" ",    
+    "css:postcss": "postcss ./dist/css/style.css --use autoprefixer --no-map -o ./dist/css/style.css",
+    "dev": "concurrently \\\"npm run watch:sass\\\" \\\"npm run css:postcss -w\\\"",
     "compress:sass": "sass --no-source-map ./dist/css/style.css ./dist/css/style.css --style compressed",
     "build": "npm run compress:sass && npm run css:postcss"
   },
