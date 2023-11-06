@@ -1,6 +1,6 @@
 # 🏢 **Flour Bluff Community Outreach Center** 
 
-This project is a web application that allows users to manage the Flour Bluff Community Outreach Center. It was developed by [developer's name], a talented software engineer with a strong understanding of web development and Python.
+This project is a web application that allows users to manage the Flour Bluff Community Outreach Center. It was developed by [Drew Clark], a talented software engineer with a strong understanding of web development and Python.
 
 ## ✨ **Features**
 
